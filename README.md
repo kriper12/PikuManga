@@ -1,2 +1,2 @@
 # ρ꠸ᛕꪊꪑꪖꪀᧁꪖ
-![lol](url)
+![lol](media/navbar.brand.png)
