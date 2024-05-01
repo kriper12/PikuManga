@@ -1,0 +1,636 @@
+
+<!doctype html>
+<html lang="en" ng-app="MainApp" ng-controller="MainCtrl as vm">
+<head>
+    <title>Death Note | PikuManga</title>
+	<meta name="description" content="Read Death Note Online For Free. The latest Manga Chapters of Death Note are now available.">
+
+	<!-- META OG -->
+	<meta property="og:type" content="article" />
+	<meta property="og:title" content="Death Note | PikuManga" />
+	<meta property="og:description" content="Read Death Note Online For Free. The latest Manga Chapters of Death Note are now available." />
+	<meta property="og:site_name" content="" />
+	<meta property="og:url" content="https://pikumanga.netlify.app/manga/Death-Note" />
+	<meta property="og:image" content="https://temp.compsci88.com/cover/Death-Note.jpg" />
+	<meta property="fb:admins" content="100009420386052" />
+	<meta property="fb:app_id" content="1609343042699696" />
+
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:site" content="@animemangastuff">
+	<meta name="twitter:title" content="Death Note | PikuManga">
+	<meta name="twitter:description" content="Read Death Note Online For Free. The latest Manga Chapters of Death Note are now available." />
+	<meta name="twitter:creator" content="@animemangastuff">
+	<meta name="twitter:image:src" content="https://temp.compsci88.com/cover/Death-Note.jpg">
+	<meta name="twitter:domain" content="PikuManga123.com">
+
+	<!-- Canonical Tag -->
+	<link rel="canonical" href="https://pikumanga.netlify.app/manga/Death-Note">
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, shrink-to-fit=no, user-scalable=no" />
+	
+	<!-- RSS -->
+	<link rel="alternate" type="application/rss+xml" title="RSS Feed" href="https://pikumanga.netlify.app/rss/Death-Note.xml" />
+
+	<!-- favicon -->
+	<link rel="shortcut icon" href="/media/favicon.png">
+
+    <!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+
+	<!-- ANGULAR STUFF -->
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.3/angular-sanitize.min.js"></script><!-- Sanitize -->
+	<script>
+		var app = angular.module("MainApp", ['ngSanitize']);
+	</script>
+	
+	<!-- Captcha -->
+	<script src="https://www.google.com/recaptcha/api.js?render=6Ld2-aMZAAAAAD9ESUQP8ijtHxtoWAwv2DOsJJ0n"></script>
+
+	<!-- Custom CSS -->
+	<style>body,html{background-color:#000000;}</style>
+
+	<!-- STANDARD CSS -->
+	<style>*{min-height:.01px}body,html{height:100%}.ng-cloak,[ng-cloak],[ng\:cloak]{display:none!important}a:active,a:focus{outline:0;-moz-outline-style:none}.back-to-top{position:fixed;bottom:3em;right:0;text-decoration:none;font-size:20px;padding:4px 10px 7px 12px;display:none;z-index:100000;border:1px solid #ccc;border-right:none;color:#ccc;background-color:#fff}.grecaptcha-badge{opacity:0!important}h1{font-size:30px}input::placeholder,textarea::placeholder{color:#ccc!important;opacity:1}input:-ms-input-placeholder,textarea::placeholder{color:#ccc!important}input::-ms-input-placeholder,textarea::placeholder{color:#ccc!important}.btn,input,select,textarea{box-shadow:none!important;-moz-box-shadow:none!important;-webkit-box-shadow:none!important}.required{color:red}.bg-dark{background-color:#444!important}.MainDiv{min-height:calc(100% - 156px);margin-bottom:-95px}.TopContainer{padding-top:20px;padding-bottom:20px}.footer,.push{height:95px}.footer{padding:20px 0;text-align:center;color:#ccc;font-size:18px}.footer a{margin:0 3px;font-size:14px;color:#fff}.top-20{margin-top:20px}.top-15{margin-top:15px}.top-10{margin-top:10px}.top-5{margin-top:5px}.bottom-20{margin-bottom:20px}.bottom-15{margin-bottom:15px}.bottom-10{margin-bottom:10px}.bottom-5{margin-bottom:5px}.navbar{padding:0!important;background-color:#2B2B2B}.navbar-brand{margin:0!important;padding:10px 15px}.nav-item a{color:#ddd!important;padding:10px 15px!important}.NavBtnSm{color:#ccc!important;padding:12px 15px}.NavBtnSm:hover,.nav-item a:hover,.nav-item:hover,.navbar-brand:hover{color:#fff!important;text-decoration:none!important}.NavBtnSm.active,.nav-item.active{color:#fff}.navbar .dropdown-menu-right{border:none;margin:0;padding:0;border-radius:0;background-color:#202020}.navbar .dropdown-menu-right a:hover{background-color:#393939;color:white;}.MenuSmall{margin-top:10px!important}.MenuSmall a{padding-left:10px;padding-right:10px;color:#fff}#TopBigLogo{max-height:80px;margin-top:10px;margin-bottom:10px}#TopSmallLogo{max-width:200px;margin-top:10px}.QuickSearch *{border-radius:0;border:none}.QuickSearch .form-control{border-right:none}.QuickSearch .input-group-text{background-color:#fff;padding-left:15px;padding-right:15px}.QuickSearch .mx-auto{background-color:#ff0;margin:10px;text-align:center}#Nav .LogoBox{text-align:left}@media(max-width:768px){#Nav .LogoBox{text-align:center}}.QuickSearch .SearchResult{position:absolute;top:42px;left:0;padding:15px;width:100%;z-index:1000}.QuickSearch .SearchResultLabel{display:inline-block;max-width:calc(100% - 60px);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.QuickSearch .SearchResultCover{background-color:#ddeaff}.SearchLink{display:block!important;color:#343a40}.SearchLink:hover{cursor:pointer;color:#fff;background-color:#2B2B2B;text-decoration:none}.NoResults{padding:10px;color:#000}.QuickSearch .input-group *{border-color:#bbb}.navbar-toggler{border:none;box-shadow:none!important;-moz-box-shadow:none!important;-webkit-box-shadow:none!important;outline:0!important}.navbar-brand{font-size:16px;color:#999c9f!important}.navbar-brand:hover{color:#cccdcf!important}.navbar-brand.active{color:#fff!important}.phone-link{color:#fff!important}.phone-link:hover{color:#ccc!important}.MainContainer{min-height:calc(100vh - 144px);padding-top:15px;padding-bottom:15px}@media(max-width:768px){.MainContainer{padding-top:10px;padding-bottom:10px}}.Box{margin-top:15px;margin-bottom:15px}@media(max-width:768px){.Box{margin-top:5px;margin-bottom:5px}}.BoxHeader{background:#2B2B2B;padding:10px 15px;color:#fff;font-size:18px}.BoxBody{background:#fff;padding:10px 15px}#Footer{text-align:center;background:#444;height:100px;padding-top:25px;color:#eee}#Footer a{margin:0 5px;color:#fff}</style>
+
+
+	<!-- Hover Wooble -->
+	<style>@-webkit-keyframes hvr-wobble-skew{16.65%{-webkit-transform:skew(-12deg);transform:skew(-12deg)}33.3%{-webkit-transform:skew(10deg);transform:skew(10deg)}49.95%{-webkit-transform:skew(-6deg);transform:skew(-6deg)}66.6%{-webkit-transform:skew(4deg);transform:skew(4deg)}83.25%{-webkit-transform:skew(-2deg);transform:skew(-2deg)}100%{-webkit-transform:skew(0);transform:skew(0)}}@keyframes hvr-wobble-skew{16.65%{-webkit-transform:skew(-12deg);transform:skew(-12deg)}33.3%{-webkit-transform:skew(10deg);transform:skew(10deg)}49.95%{-webkit-transform:skew(-6deg);transform:skew(-6deg)}66.6%{-webkit-transform:skew(4deg);transform:skew(4deg)}83.25%{-webkit-transform:skew(-2deg);transform:skew(-2deg)}100%{-webkit-transform:skew(0);transform:skew(0)}}.hvr-wobble-skew{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px transparent}.hvr-wobble-skew:active,.hvr-wobble-skew:focus,.hvr-wobble-skew:hover{-webkit-animation-name:hvr-wobble-skew;animation-name:hvr-wobble-skew;-webkit-animation-duration:1s;animation-duration:1s;-webkit-animation-timing-function:ease-in-out;animation-timing-function:ease-in-out;-webkit-animation-iteration-count:1;animation-iteration-count:1}.fade-in{animation:fadeIn ease 1s;-webkit-animation:fadeIn ease 1s;-moz-animation:fadeIn ease 1s;-o-animation:fadeIn ease 1s;-ms-animation:fadeIn ease 1s}@keyframes fadeIn{0%{opacity:0}100%{opacity:1}}@-moz-keyframes fadeIn{0%{opacity:0}100%{opacity:1}}@-webkit-keyframes fadeIn{0%{opacity:0}100%{opacity:1}}@-o-keyframes fadeIn{0%{opacity:0}100%{opacity:1}}@-ms-keyframes fadeIn{0%{opacity:0}100%{opacity:1}}</style>
+
+	<!-- Custom Styling -->
+	<style>h1{font-size:28px}.BoxBody .list-group-item{padding:5px 0}.mlabel{font-weight:600}.CoverImage{background:#f2f2f2;text-align:center}@media (max-width:575px){.CoverImage img{width:50%;margin:0 auto}}.ChapterLink{padding:8px 15px!important;border-radius:0!important}.ChapterLink:visited{color:gray}.LastRead{color:#9374c2;margin-left:10px;font-style:italic}.ShowAllChapters{padding:8px 15px!important;border-radius:0!important;color:green;font-weight:700;cursor:pointer}.ShowAllChapters:hover{color:#4caf50}.CommentArea h2{font-size:20px;font-weight:400}.CommentArea{border:1px solid #ccc;padding:10px;background:#f9f9f9}.CommentForm{border:1px solid #ccc;padding:10px;background:#fff}.CommentForm textarea{background:#f7fffd}.Content{white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space:-o-pre-wrap;word-wrap:break-word}.Comment{border:1px solid #ccc;padding:10px;background:#fff}.CommentTop,.CommentTop a{font-size:14px;color:gray}.CommentTop strong{font-weight:600}.DeleteComment{color:#ccc!important}.DeleteComment:hover{color:gray!important}.Reply{border-top:1px solid #eee;padding-left:20px}.ReplyNav{color:gray;font-size:14px}.ReplyNav a,.ReplyNav span{color:gray;margin-right:5px}.ReplyMessage{padding-left:20px}.ViewMoreReplies{background:#f2f2f2;padding:5px;border-radius:5px;text-align:center;color:gray;cursor:pointer}.RelatedManga{padding:10px 15px 15px 15px;background:#f2f2f2;border:1px solid #ddd}.RelatedManga h3{font-size:18px;font-weight:600;color:gray}.RelatedLink{color:#fff}.RelatedLink:hover{color:#ff0;text-decoration:none}.RelatedLink .ImgHolder{position:relative;overflow:hidden;padding-bottom:103%;background:#000}@media (min-width:1200px){.RelatedLink .ImgHolder{padding-bottom:117%}}.RelatedLink .ImgHolder img{position:absolute}.RelatedLink .NameHolder{background:#2b2b2b;text-align:center;padding:5px 10px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.ResponsiveVideo{position:relative;padding-bottom:56.25%;height:0}.ResponsiveVideo iframe{position:absolute;top:0;left:0;width:100%;height:100%}</style>
+</head>
+<body>
+	<nav class="navbar navbar-expand-md navbar-dark">
+		<div class="container">
+			<a class="navbar-brand" href="/" style="padding:6px 10px;">
+				<img style="max-height:32px;" src="/media/navbar.brand.small2.png">
+			</a>
+
+			<div class="d-inline-block d-md-none mr-auto">
+				<a href="/search/" class="NavBtnSm">
+					<i class="fas fa-search"></i>
+				</a>
+				<a href="/manga/Clover-T-E-T-S-U-H-I-R-O-Hirakawa" class="NavBtnSm">
+					<i class="fas fa-sync-alt"></i>
+				</a>
+			</div>
+
+			<div class="d-inline-block d-md-none">
+				<a class="NavBtnSm" href="#" data-toggle="modal" data-target="#AuthModal">
+					<i class="fas fa-sign-in-alt"></i>
+					Login
+				</a>
+			</div>
+
+			<div class="collapse navbar-collapse d-none d-md-flex">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item">
+						<a href="/search/" class="nav-link">
+							<i class="fas fa-search"></i>
+							Search
+						</a>
+					</li>
+					<li class="nav-item">
+						<a href="/manga/Clover-T-E-T-S-U-H-I-R-O-Hirakawa" class="nav-link">
+							<i class="fas fa-sync-alt"></i>
+							Random
+						</a>
+					</li>
+				</ul>
+
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+
+	<style>.AuthLink{color:gray}.AuthLink a{color:gray;margin-right:15px}.AuthLink a:active,.AuthLink a:focus,.AuthLink a:hover{text-decoration:none}</style>
+	<!-- Modal -->
+	<div class="modal fade" id="AuthModal" tabindex="-1" role="dialog" data-backdrop="static" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLabel">
+						<span ng-if="vm.AuthType == 'Login'">
+							<i class="fas fa-sign-in-alt"></i>
+							Login
+						</span>
+						<span ng-if="vm.AuthType == 'Register'">
+							<i class="fas fa-user-plus"></i>
+							New Account
+						</span>
+						<span ng-if="vm.AuthType == 'Reset'">
+							<i class="fas fa-key"></i>
+							Reset Password
+						</span>
+					</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<div class="bottom-10">
+						Email Address:
+						<input class="form-control" type="email" ng-model="vm.AuthEmail" ng-disabled="vm.Authenticating" ng-keyup="$event.keyCode == 13 && vm.AuthToggle()">
+					</div>
+
+					<div class="bottom-10" ng-if="vm.AuthType == 'Register'">
+						Username:
+						<input class="form-control" type="text" ng-model="vm.AuthUsername" ng-disabled="vm.Authenticating" ng-keyup="$event.keyCode == 13 && vm.AuthToggle()">
+					</div>
+
+					<div class="bottom-10" ng-if="vm.AuthType != 'Reset'">
+						Password:
+						<input class="form-control" type="password" ng-model="vm.AuthPassword" ng-disabled="vm.Authenticating" ng-keyup="$event.keyCode == 13 && vm.AuthToggle()">
+					</div>
+
+					<span class="AuthLink" ng-if="vm.AuthType != 'Register'">
+						&middot; 
+						<a href="#" onclick="DoNothing(event)" ng-if="!vm.Authenticating" ng-click="vm.ResetSuccess = ''; vm.AuthType = 'Register'">Register</a>
+						<span style="color:#ccc; margin-right:15px;" ng-if="vm.Authenticating">Register</span>
+					</span>
+
+					<span class="AuthLink" ng-if="vm.AuthType != 'Login'">
+						&middot; 
+						<a href="#" onclick="DoNothing(event)" ng-if="!vm.Authenticating" ng-click="vm.ResetSuccess = ''; vm.AuthType = 'Login'">Login</a>
+						<span style="color:#ccc; margin-right:15px;" ng-if="vm.Authenticating">Login</span>
+					</span>
+
+					<span class="AuthLink" ng-if="vm.AuthType != 'Reset'">
+						&middot; 
+						<a href="#" onclick="DoNothing(event)" ng-if="!vm.Authenticating" ng-click="vm.ResetSuccess = ''; vm.AuthType = 'Reset'">Forgot Password</a>
+						<span style="color:#ccc; margin-right:15px;" ng-if="vm.Authenticating">Forgot Password</span>
+					</span>
+
+					<div class="alert alert-danger top-15" style="margin-bottom:0px;" ng-if="vm.AuthWarning != ''">
+						<i class="fas fa-exclamation-triangle"></i>
+						{{vm.AuthWarning}}
+					</div>
+					
+					<div class="alert alert-success top-15" style="margin-bottom:0px;" ng-if="vm.ResetSuccess">
+						<i class="fas fa-check"></i>
+						{{vm.ResetSuccess}}
+					</div>
+				</div>
+				<div class="modal-body" style="border-top:1px solid #DDDDDD;">
+					<button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Close</button>
+					
+					<span class="float-right">
+						<button type="button" class="btn btn-primary" ng-if="vm.AuthType == 'Login'" ng-disabled="vm.Authenticating" ng-click="vm.Login()">
+							<i class="fa fa-spin fa-spinner" ng-if="vm.Authenticating"></i>
+							Login
+						</button>
+						<button type="button" class="btn btn-success" ng-if="vm.AuthType == 'Register'" ng-disabled="vm.Authenticating" ng-click="vm.Register()">
+							<i class="fa fa-spin fa-spinner" ng-if="vm.Authenticating"></i>
+							Register
+						</button>
+						<button type="button" class="btn btn-danger" ng-if="vm.AuthType == 'Reset'" ng-disabled="vm.Authenticating" ng-click="vm.ResetPassword()">
+							<i class="fa fa-spin fa-spinner" ng-if="vm.Authenticating"></i>
+							Reset Password
+						</button>
+					</span>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="container MainContainer" ng-cloak>
+		<div class="row">
+			<div class="col-md-12">
+				<div class="Box">
+					<div class="BoxBody">
+						
+						<div ng-if="vm.Unavailable">
+							<div class="alert alert-info top-5 bottom-10 text-center" style="background:#f0fdff; border-color:#daf1f5;">
+								<i class="far fa-hand-paper"></i>
+
+								You have finished reading the last chapter of Death Note. This series is <span style="font-weight:600;">Complete</span>.
+								
+								<!--
+								<div>
+									<a href="https://www.facebook.com/MangaLifeOfficial/" class="btn btn-sm btn-primary top-10" style="background:#4267B2; border-color:#4267B2;" target="_BLANK">
+										<i class="fab fa-facebook-f" style="margin-right:5px;"></i>
+										MangaLifeOfficial
+									</a>
+									<a href="https://www.instagram.com/mangalife.ig/" class="btn btn-sm btn-primary top-10" style="background:#fb3958; border-color:#fb3958;" target="_BLANK">
+										<i class="fab fa-instagram" style="margin-right:5px;"></i>
+										mangalife.ig
+									</a>
+								</div>
+								-->
+
+
+							</div>
+
+							<div class="row top-15" style="background:#EEE; padding-bottom:15px;" ng-if="vm.Unavailable">
+								
+								<div class="col-lg-5">
+									<div class="top-15">
+											<a href="https://pikumanga.netlify.app/manga/Chainsaw-Man"><img class="img-fluid" src="https://temp.compsci88.com/cover/chainsaw-man.png"></a>
+	<!--
+	<a href="https://www.amazon.com/dp/B084HM5XJ5" target="_BLANK"><img src="/edd/train-like-hell-02-min.png" class="img-fluid"></a>
+	-->
+
+									</div>
+								</div>
+								
+								<div class="col-lg-7">
+									<div class="top-15 RelatedManga" style="background:white; border:none;">
+										<h3>Related Manga:</h3>
+										<div class="row">
+											<div class="col-sm-3 col-6 top-10" ng-repeat="Series in vm.RelatedSeriesJSON | orderBy:'OrderID':true">
+												<a class="RelatedLink" href="/manga/{{Series.IndexName}}">
+													<div class="ImgHolder">
+														<img class="img-fluid" src="https://temp.compsci88.com/cover/{{Series.IndexName}}.jpg">
+													</div>
+													<div class="NameHolder" ng-bind-html="Series.SeriesName"></div>
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="col-md-3 col-sm-4 col-3 top-5" style="padding-right:0px;">
+								<img class="img-fluid bottom-5" src="https://temp.compsci88.com/cover/Death-Note.jpg">
+							</div>
+							<div class="d-sm-none col-9 top-5 bottom-5">
+								<div class="bottom-10" style="font-size:22px; line-height:1.3;">
+									Death Note								</div>
+								
+								<div class="btn-group">
+									<span class="btn btn-outline-secondary" style="border-radius:0px; padding:2px 12px; background:white; color:gray;">{{vm.NumSubs | number:0}}</span>
+									<button class="btn btn-sm btn-danger" style="border-radius:0px; padding:2px 12px;" ng-click="vm.Subscribe()" ng-if="!vm.Subbed" ng-disabled="vm.Subbing">SUBSCRIBE</button>
+									<button class="btn btn-sm btn-outline-secondary" style="border-radius:0px; padding:2px 12px;" ng-click="vm.Subscribe()" ng-if="vm.Subbed" ng-disabled="vm.Subbing">
+										<i class="fa fa-check"></i> SUBSCRIBED
+									</button>
+									<!--
+									<button class="btn btn-sm btn-link" ng-if="vm.Subbed" ng-click="vm.ToggleNotification()" title="Notify New Chapters under Account Tab">
+										<i class="fas fa-bell" ng-if="vm.Notification" style="color:orange;"></i>
+										<i class="fas fa-bell-slash" ng-if="!vm.Notification" style="color:gray;"></i>
+									</button>
+									-->
+								</div>
+
+								<div class="top-10">
+									<button class="btn btn-outline-secondary" style="padding:0px 5px; border-radius:0px; font-size:12px;" ng-click="vm.ShowInfoMobile = !vm.ShowInfoMobile" ng-if="!vm.ShowInfoMobile">
+										<i class="fas fa-info-circle"></i>
+										show info
+									</button>
+								</div>
+							</div>
+							<div class="col-md-9 col-sm-8 top-5">
+								<ul class="list-group list-group-flush">
+									<li class="list-group-item d-none d-sm-block">
+										<h1>Death Note</h1>
+									</li>
+									
+
+									<li class="list-group-item d-none d-sm-block" style="padding:8px 0px">										
+										<div class="btn-group">
+											<span class="btn btn-outline-secondary" style="border-radius:0px; padding:3px 15px; background:white; color:gray;">{{vm.NumSubs | number:0}}</span>
+											<button class="btn btn-sm btn-danger" style="border-radius:0px; padding:3px 15px;" ng-click="vm.Subscribe()" ng-if="!vm.Subbed" ng-disabled="vm.Subbing">SUBSCRIBE</button>
+											<button class="btn btn-sm btn-outline-secondary" style="border-radius:0px; padding:3px 15px;" ng-click="vm.Subscribe()" ng-if="vm.Subbed" ng-disabled="vm.Subbing">
+												<i class="fa fa-check"></i> SUBSCRIBED
+											</button>
+										</div>
+										<!--
+										<button class="btn btn-sm btn-link" ng-if="vm.Subbed" ng-click="vm.ToggleNotification()" title="Notify New Chapters under Account Tab">
+											<i class="fas fa-bell" ng-if="vm.Notification" style="color:orange;"></i>
+											<i class="fas fa-bell-slash" ng-if="!vm.Notification" style="color:gray;"></i>
+										</button>
+										-->
+									</li>
+									
+									<li class="list-group-item {{vm.ShowInfoMobile ? '' : 'd-none d-md-block' }}">
+										<span class="mlabel">Alternate Name(s):</span> Death Note									</i>
+	
+									<li class="list-group-item {{vm.ShowInfoMobile ? '' : 'd-none d-md-block' }}">
+										<span class="mlabel">Author(s):</span> 
+<a href='/search/?author=OBATA Takeshi'>OBATA Takeshi</a>, <a href='/search/?author=OHBA Tsugumi'>OHBA Tsugumi</a>
+									</i>
+	
+									<li class="list-group-item {{vm.ShowInfoMobile ? '' : 'd-none d-md-block' }}">
+										<span class="mlabel">Genre(s):</span> 
+<a href='/search/?genre=Drama'>Drama</a>, <a href='/search/?genre=Mystery'>Mystery</a>, <a href='/search/?genre=Psychological'>Psychological</a>, <a href='/search/?genre=Shounen'>Shounen</a>, <a href='/search/?genre=Supernatural'>Supernatural</a>, <a href='/search/?genre=Tragedy'>Tragedy</a>
+									</i>
+
+									<li class="list-group-item {{vm.ShowInfoMobile ? '' : 'd-none d-md-block' }}">
+										<span class="mlabel">Type:</span> <a href="/search/?type=Manga">Manga</a>
+									</i>
+									<li class="list-group-item {{vm.ShowInfoMobile ? '' : 'd-none d-md-block' }}">
+										<span class="mlabel">Released:</span> <a href="/search/?year=2004">2004</a>
+									</i>
+									<li class="list-group-item {{vm.ShowInfoMobile ? '' : 'd-none d-md-block' }}">
+										<span class="mlabel">Official Translation:</span> <a href="/search/?official=yes">Yes</a>
+									</i>
+									<li class="list-group-item {{vm.ShowInfoMobile ? '' : 'd-none d-md-block' }}">
+										<span class="mlabel">Status:</span> 
+										<a href="/search/?status=Complete">Complete (Scan)</a>,
+										<a href="/search/?status=Complete">Complete (Publish)</a>
+									</i>
+									<li class="list-group-item {{vm.ShowInfoMobile ? '' : 'd-none d-md-block' }}">
+										<span class="mlabel">RSS:</span> 
+										<a href="/rss/Death-Note.xml" target="_BLANK">RSS Feed</a>
+									</i>
+									<li class="list-group-item {{vm.ShowInfoMobile ? '' : 'd-none d-md-block' }}">
+										<span class="mlabel">Description:</span>
+										<div class="top-5 Content">Light Yagami is an ace student with great prospects--and he's bored out of his mind. But all that changes when he finds the Death Note, a notebook dropped by a rogue Shinigami death god. Any human whose name is written in the notebook dies, and now Light has vowed to use the power of the Death Note to rid the world of evil. But when criminals begin dropping dead, the authorities send the legendary detective L to track down the killer. With L hot on his heels, will Light lose sight of his noble goal... or his life?</div>
+									</i>
+								</u>
+							</div>
+						</div>
+
+						<div class="alert alert-danger top-10 bottom-5" ng-if="vm.Chapters.length == 0">
+							<i class="fas fa-exclamation-triangle"></i>
+							This Series is currently unavailable. Subscribe to get notified when a new chapter is released.
+						</div>
+
+						<div class="list-group top-10 bottom-5" ng-if="vm.Chapters.length > 0">
+							<a 	href="/read-online/Death-Note{{vm.ChapterURLEncode(Chapter.Chapter)}}" 
+								class="list-group-item ChapterLink"
+								ng-repeat="Chapter in vm.Chapters | limitTo:vm.LimitChapter">
+								<span style="font-weight:600">
+									{{Chapter.Type != '' ? Chapter.Type : 'Chapter'}}
+									{{vm.ChapterDisplay(Chapter.Chapter)}}
+								</span>
+								<i style="color:gray;">{{Chapter.ChapterName}}</i>
+								<span class="badge badge-warning" style="color:white;" ng-if="vm.IsNew(Chapter.Date)">NEW</span>
+								<span class="LastRead" ng-if="Chapter.Chapter == vm.LastChapterRead"><i class="fas fa-map-marker-alt"></i> Last Read</span>
+
+								<span class="float-right d-none d-md-inline" style="color:gray;">{{vm.FormatDate(Chapter.Date)}}</span>
+
+								<div class="d-block d-md-none" style="color:gray; font-size:12px;">{{vm.FormatDate(Chapter.Date)}}</div>
+							</a>
+
+							<div class="list-group-item ShowAllChapters" ng-click="vm.LimitChapter = vm.Chapters.length" ng-if="vm.LimitChapter < vm.Chapters.length - 1">
+								Show All Chapters
+								<i class="fas fa-chevron-down float-right" style="margin-top:4px;"></i>
+							</div>
+							
+							<a 	href="/read-online/Death-Note{{vm.ChapterURLEncode(vm.Chapters[vm.Chapters.length-1].Chapter)}}" 
+								class="list-group-item ChapterLink"
+								ng-if="vm.LimitChapter < vm.Chapters.length">
+								<span style="font-weight:600">
+									{{vm.Chapters[vm.Chapters.length-1].Type != '' ? vm.Chapters[vm.Chapters.length-1].Type : 'Chapter'}}
+									{{vm.ChapterDisplay(vm.Chapters[vm.Chapters.length-1].Chapter)}}
+								</span>
+								<i style="color:gray;">{{vm.Chapters[vm.Chapters.length-1].ChapterName}}</i>
+								<span class="badge badge-warning" style="color:white;" ng-if="vm.IsNew(vm.Chapters[vm.Chapters.length-1].Date)">NEW</span>
+								<span class="LastRead" ng-if="vm.Chapters[vm.Chapters.length-1].Chapter == vm.LastChapterRead"><i class="fas fa-map-marker-alt"></i> Last Read</span>
+
+								<span class="float-right d-none d-md-inline" style="color:gray;">{{vm.FormatDate(vm.Chapters[vm.Chapters.length-1].Date)}}</span>
+
+								<div class="d-block d-md-none" style="color:gray; font-size:12px;">{{vm.FormatDate(vm.Chapters[vm.Chapters.length-1].Date)}}</div>
+							</a>
+						</div>
+
+						
+						<div class="dropdown top-20" ng-if="vm.ChaptersViewed.length > 0">
+							<button type="button" class="btn btn-outline-dark btn-sm" data-toggle="dropdown">
+								<i class="fas fa-eraser"></i> Clear History
+							</button>
+							<div class="dropdown-menu">
+								<a class="dropdown-item" href="#" onclick="DoNothing(event)" ng-click="vm.ClearHistory()">Confirm Clear Read History</a>
+							</div>
+						</div>
+
+						<!-- adsterra ads -->
+						<div style="max-width:600px; margin:0px auto;">
+							
+						</div>
+						
+
+						<div class="row top-15" style="background:#EEE; padding-bottom:15px;" ng-if="!vm.Unavailable">							
+							<div class="col-lg-5">
+								<div class="top-15">
+										<a href="https://pikumanga.netlify.app/manga/Chainsaw-Man"><img class="img-fluid" src="https://temp.compsci88.com/cover/chainsaw-man.png"></a>
+	<!--
+	<a href="https://www.amazon.com/dp/B084HM5XJ5" target="_BLANK"><img src="/edd/train-like-hell-02-min.png" class="img-fluid"></a>
+	-->
+
+								</div>
+							</div>
+							
+							<div class="col-lg-7">
+								<div class="top-15 RelatedManga" style="background:white; border:none;">
+									<h3>Related Manga:</h3>
+									<div class="row">
+										<div class="col-sm-3 col-6 top-10" ng-repeat="Series in vm.RelatedSeriesJSON | orderBy:'OrderID':true">
+											<a class="RelatedLink" href="/manga/{{Series.IndexName}}">
+												<div class="ImgHolder">
+													<img class="img-fluid" src="https://temp.compsci88.com/cover/{{Series.IndexName}}.jpg">
+												</div>
+												<div class="NameHolder" ng-bind-html="Series.SeriesName"></div>
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="top-20 bottom-5 CommentArea">
+							<h2>
+								<i class="far fa-comments"></i>
+								{{(vm.Comments.length + vm.ReplyCount) | number:0}} Comment{{(vm.Comments.length + vm.ReplyCount) == 1 ? '' : 's'}}
+							</h2>
+						
+							<div class="top-15 CommentForm">
+								<textarea class="form-control" placeholder="Write Comment Here..." ng-model="vm.CommentContent"></textarea>
+								<div class="top-10 text-right">
+
+
+									<button class="btn btn-primary" data-toggle="modal" data-target="#AuthModal" ng-click="vm.AuthWarning = ''">
+										Submit
+									</button>
+								
+
+								</div>
+							</div>
+							
+
+							<div id="comments">
+								<div class="top-10 Comment" ng-repeat="Comment in vm.Comments">
+									<div class="CommentTop">
+										<strong>{{Comment.Username}}</strong> 
+										&middot; {{vm.FormatDate(Comment.TimeCommented)}} 
+
+										<div class="float-right d-inline-block" ng-if="Comment.UserID == '' || vm.IsAdmin">
+											<div class="dropdown d-inline-block">
+												<a class="DeleteComment" href="#" onclick="DoNothing(event)" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+													<i class="fa fa-times"></i>
+												</a>					
+												<div class="dropdown-menu dropdown-menu-right">
+													<a class="dropdown-item" href="#" onclick="DoNothing(event)" ng-click="vm.DeleteComment(Comment)">Confirm Delete</a>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="top-10 Content">{{Comment.CommentContent}}</div>
+								
+
+									<div class="top-10 ReplyNav">
+										<span>+{{Comment.LikeCount | number:0}}</span>
+										<span>&middot;</span>
+										<a href="#" onclick="DoNothing(event)" data-toggle="modal" data-target="#AuthModal" ng-click="vm.AuthWarning = ''">like</a>
+										<span>&middot;</span>
+										<a href="#" onclick="DoNothing(event)" data-toggle="modal" data-target="#AuthModal" ng-click="vm.AuthWarning = ''">reply</a>
+									</div>
+									
+
+									<div class="top-10 ViewMoreReplies" ng-if="Comment.ReplyLimit < Comment.Replies.length" ng-hide="Comment.ShowMoreHide" ng-click="vm.ShowAllReplies(Comment)">
+										View Previous Replies
+									</div>
+									<div class="top-10 ViewMoreReplies" ng-if="Comment.ShowMoreHide">
+										<i class="fa fa-spin fa-spinner"></i> Loading...
+									</div>
+
+									<div class="top-10 Reply" ng-repeat="Reply in Comment.Replies | orderBy:CommentID:true" ng-hide="Comment.ReplyLimit < Comment.Replies.length && Comment.Replies.indexOf(Reply) > Comment.ReplyLimit">
+										<div class="top-10 CommentTop">
+											<strong>{{Reply.Username}}</strong>
+											&middot; 
+											{{vm.FormatDate(Reply.TimeCommented)}}
+											<div class="float-right d-inline-block" ng-if="Reply.UserID == '' || vm.IsAdmin">
+												<div class="dropdown d-inline-block">
+													<a class="DeleteComment" href="#" onclick="DoNothing(event)" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+														<i class="fa fa-times"></i>
+													</a>					
+													<div class="dropdown-menu dropdown-menu-right">
+														<a class="dropdown-item" href="#" onclick="DoNothing(event)" ng-click="vm.DeleteReply(Comment, Reply)">Confirm Delete</a>
+													</div>
+												</div>
+											</div>
+										</div> 
+										<div class="top-10 Content">{{Reply.CommentContent}}</div>
+									</div>
+
+									<div class="ReplyMessage" id="Reply{{Comment.CommentID}}">
+										<textarea class="form-control top-10" placeholder="Write Reply..." ng-model="Comment.ReplyMessage" ng-if="Comment.ShowReply"></textarea>
+										<div class="text-right top-10">
+											<button class="btn btn-sm btn-primary" type="button" ng-if="Comment.ShowReply" ng-disabled="Comment.Replying" ng-click="vm.Reply(Comment)">
+												<i class="fa fa-spin fa-spinner" ng-if="Comment.Replying"></i>
+												Submit
+											</button>
+										</div>
+									</div>
+
+
+								</div>
+							</div>
+
+						</div>
+						
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+<a href="#" class="back-to-top"><span class="fa fa-chevron-up"></span></a>
+<script>jQuery(document).ready(function(){var a=400,o=500;jQuery(window).scroll(function(){jQuery(this).scrollTop()>a?(jQuery(".back-to-top").fadeIn(o),$(".navbarRegular").hide(),$(".navbarNavTop").show()):(jQuery(".back-to-top").fadeOut(o),$(".navbarRegular").show(),$(".navbarNavTop").hide())}),jQuery(".back-to-top").click(function(a){return a.preventDefault(),jQuery("html, body").animate({scrollTop:0},o),!1})});</script>
+
+<!-- DoNothing -->
+<script>function DoNothing(t){t.preventDefault()}$("body").on("click","a",function(t){href=$(this).attr("href"),"#"==href&&t.preventDefault()});</script>
+
+<div id="Footer"><a href="/">Home</a><a href="/contact/">Contact</a><a href="/privacy/">Privacy</a><div>Copyright © PikuManga 2024</div></div>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/js-cookie/2.2.1/js.cookie.min.js"></script>
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-92638121-5', 'auto');
+		ga('send', 'pageview');
+		
+		ga('send', 'event', {
+			'eventCategory'	: "Reading",
+			'eventAction'	: "Death Note",
+			'eventLabel'	: "Manga Info"
+		});
+	</script> 
+	
+	<script type="application/ld+json">
+		{
+			"@context": "http://schema.org",
+			"@type": "WebPage",
+			"breadcrumb":{
+				"@type": "BreadcrumbList",
+				"itemListElement": [{
+					"@type": "ListItem",
+					"position": 1,
+					"item": {
+						"@id" : "https://PikuManga123.com",
+						"name": "PikuManga"
+					}
+				}]
+			},	
+			"mainEntity":{
+				"@type": "CreativeWork",
+				"name": "Death Note",
+				"about": "Read Death Note Manga Online For Free. You can read the latest chapters of Death Note Manga on PikuManga.",
+				"alternateName": ["Death Note"],
+				"author": ["OBATA Takeshi"],
+				"genre": ["Drama","Mystery","Psychological","Shounen","Supernatural","Tragedy"],
+				"datePublished": "2019-03-17 01:43:36",
+				"dateModified": "2022-06-14 15:42:46"
+			}
+		}
+	</script>
+
+	<script>
+		function MainFunction($http){
+			var vm = this;
+			
+			vm.AuthType="Login",vm.Authenticating=!1,vm.AuthWarning="",vm.ResetSuccess="",vm.Login=function(){vm.Authenticating=!0,vm.AuthWarning="",vm.ResetSuccess="",$http({method:"POST",url:"/auth/login.php",data:{EmailAddress:vm.AuthEmail,Password:vm.AuthPassword}}).then(function(t){t.data.success?location.reload():"old_db"==t.data.val?(vm.AuthType="Register",vm.AuthWarning="We just transfered our database. Please register again with this Email Address and all of your subscription will transfer automatically."):vm.AuthWarning=t.data.val,vm.Authenticating=!1},function(t){vm.AuthWarning="Network Error. Please try again later.",vm.Authenticating=!1})},vm.Register=function(){vm.Authenticating=!0,vm.AuthWarning="",vm.ResetSuccess="",grecaptcha.execute("6Ld2-aMZAAAAAD9ESUQP8ijtHxtoWAwv2DOsJJ0n",{action:"homepage"}).then(function(t){vm.Captcha=t,$http({method:"POST",url:"/auth/register.php",data:{EmailAddress:vm.AuthEmail,Username:vm.AuthUsername,Password:vm.AuthPassword,Captcha:vm.Captcha}}).then(function(t){t.data.success?location.reload():vm.AuthWarning=t.data.val,vm.Authenticating=!1},function(t){vm.AuthWarning="Network Error. Please try again later.",vm.Authenticating=!1})})},vm.ResetPassword=function(){vm.Authenticating=!0,vm.AuthWarning="",vm.ResetSuccess="",$http({method:"POST",url:"/auth/reset.php",data:{EmailAddress:vm.AuthEmail}}).then(function(t){t.data.success?(vm.AuthEmail="",vm.AuthUsername="",vm.AuthPassword="",vm.ResetSuccess="If the email address exists, we will send a link to reset your password in a few seconds. If you don't see the email, check other places it might be, like your junk, spam, social, or other folders."):vm.AuthWarning=t.data.val,vm.Authenticating=!1},function(t){vm.AuthWarning="Network Error. Please try again later.",vm.Authenticating=!1})},vm.AuthToggle=function(){"Login"==vm.AuthType?vm.Login():"Register"==vm.AuthType?vm.Register():"Reset"==vm.AuthType&&vm.ResetPassword()};
+
+
+			vm.Test = function(){
+				alert("HI");
+			};
+			vm.IndexName = "Death-Note";
+			vm.CaptchaPublicKey	= "6Ld2-aMZAAAAAD9ESUQP8ijtHxtoWAwv2DOsJJ0n";
+			vm.Chapters = [{"Chapter":"101084","Type":"Chapter","Date":"2022-06-14 15:42:46","ChapterName":null},{"Chapter":"101083","Type":"Chapter","Date":"2022-06-14 15:42:46","ChapterName":null},{"Chapter":"101082","Type":"Chapter","Date":"2022-06-14 15:42:46","ChapterName":null},{"Chapter":"101081","Type":"Chapter","Date":"2022-06-14 15:42:46","ChapterName":null},{"Chapter":"101080","Type":"Chapter","Date":"2019-03-17 01:43:43","ChapterName":""},{"Chapter":"101070","Type":"Chapter","Date":"2019-03-17 01:43:43","ChapterName":""},{"Chapter":"101060","Type":"Chapter","Date":"2019-03-17 01:43:43","ChapterName":""},{"Chapter":"101050","Type":"Chapter","Date":"2019-03-17 01:43:43","ChapterName":""},{"Chapter":"101040","Type":"Chapter","Date":"2019-03-17 01:43:43","ChapterName":""},{"Chapter":"101030","Type":"Chapter","Date":"2019-03-17 01:43:43","ChapterName":""},{"Chapter":"101020","Type":"Chapter","Date":"2019-03-17 01:43:43","ChapterName":""},{"Chapter":"101010","Type":"Chapter","Date":"2019-03-17 01:43:42","ChapterName":""},{"Chapter":"101000","Type":"Chapter","Date":"2019-03-17 01:43:42","ChapterName":""},{"Chapter":"100990","Type":"Chapter","Date":"2019-03-17 01:43:42","ChapterName":""},{"Chapter":"100980","Type":"Chapter","Date":"2019-03-17 01:43:42","ChapterName":""},{"Chapter":"100970","Type":"Chapter","Date":"2019-03-17 01:43:42","ChapterName":""},{"Chapter":"100960","Type":"Chapter","Date":"2019-03-17 01:43:42","ChapterName":""},{"Chapter":"100950","Type":"Chapter","Date":"2019-03-17 01:43:42","ChapterName":""},{"Chapter":"100940","Type":"Chapter","Date":"2019-03-17 01:43:42","ChapterName":""},{"Chapter":"100930","Type":"Chapter","Date":"2019-03-17 01:43:42","ChapterName":""},{"Chapter":"100920","Type":"Chapter","Date":"2019-03-17 01:43:42","ChapterName":""},{"Chapter":"100910","Type":"Chapter","Date":"2019-03-17 01:43:42","ChapterName":""},{"Chapter":"100900","Type":"Chapter","Date":"2019-03-17 01:43:42","ChapterName":""},{"Chapter":"100890","Type":"Chapter","Date":"2019-03-17 01:43:42","ChapterName":""},{"Chapter":"100880","Type":"Chapter","Date":"2019-03-17 01:43:42","ChapterName":""},{"Chapter":"100870","Type":"Chapter","Date":"2019-03-17 01:43:42","ChapterName":""},{"Chapter":"100860","Type":"Chapter","Date":"2019-03-17 01:43:42","ChapterName":""},{"Chapter":"100850","Type":"Chapter","Date":"2019-03-17 01:43:41","ChapterName":""},{"Chapter":"100840","Type":"Chapter","Date":"2019-03-17 01:43:41","ChapterName":""},{"Chapter":"100830","Type":"Chapter","Date":"2019-03-17 01:43:41","ChapterName":""},{"Chapter":"100820","Type":"Chapter","Date":"2019-03-17 01:43:41","ChapterName":""},{"Chapter":"100810","Type":"Chapter","Date":"2019-03-17 01:43:41","ChapterName":""},{"Chapter":"100800","Type":"Chapter","Date":"2019-03-17 01:43:41","ChapterName":""},{"Chapter":"100790","Type":"Chapter","Date":"2019-03-17 01:43:41","ChapterName":""},{"Chapter":"100780","Type":"Chapter","Date":"2019-03-17 01:43:41","ChapterName":""},{"Chapter":"100770","Type":"Chapter","Date":"2019-03-17 01:43:41","ChapterName":""},{"Chapter":"100760","Type":"Chapter","Date":"2019-03-17 01:43:41","ChapterName":""},{"Chapter":"100750","Type":"Chapter","Date":"2019-03-17 01:43:41","ChapterName":""},{"Chapter":"100740","Type":"Chapter","Date":"2019-03-17 01:43:41","ChapterName":""},{"Chapter":"100730","Type":"Chapter","Date":"2019-03-17 01:43:41","ChapterName":""},{"Chapter":"100720","Type":"Chapter","Date":"2019-03-17 01:43:41","ChapterName":""},{"Chapter":"100710","Type":"Chapter","Date":"2019-03-17 01:43:41","ChapterName":""},{"Chapter":"100700","Type":"Chapter","Date":"2019-03-17 01:43:41","ChapterName":""},{"Chapter":"100690","Type":"Chapter","Date":"2019-03-17 01:43:40","ChapterName":""},{"Chapter":"100680","Type":"Chapter","Date":"2019-03-17 01:43:40","ChapterName":""},{"Chapter":"100670","Type":"Chapter","Date":"2019-03-17 01:43:40","ChapterName":""},{"Chapter":"100660","Type":"Chapter","Date":"2019-03-17 01:43:40","ChapterName":""},{"Chapter":"100650","Type":"Chapter","Date":"2019-03-17 01:43:40","ChapterName":""},{"Chapter":"100640","Type":"Chapter","Date":"2019-03-17 01:43:40","ChapterName":""},{"Chapter":"100630","Type":"Chapter","Date":"2019-03-17 01:43:40","ChapterName":""},{"Chapter":"100620","Type":"Chapter","Date":"2019-03-17 01:43:40","ChapterName":""},{"Chapter":"100610","Type":"Chapter","Date":"2019-03-17 01:43:40","ChapterName":""},{"Chapter":"100600","Type":"Chapter","Date":"2019-03-17 01:43:40","ChapterName":""},{"Chapter":"100590","Type":"Chapter","Date":"2019-03-17 01:43:40","ChapterName":""},{"Chapter":"100580","Type":"Chapter","Date":"2019-03-17 01:43:40","ChapterName":""},{"Chapter":"100570","Type":"Chapter","Date":"2019-03-17 01:43:40","ChapterName":""},{"Chapter":"100560","Type":"Chapter","Date":"2019-03-17 01:43:39","ChapterName":""},{"Chapter":"100550","Type":"Chapter","Date":"2019-03-17 01:43:39","ChapterName":""},{"Chapter":"100540","Type":"Chapter","Date":"2019-03-17 01:43:39","ChapterName":""},{"Chapter":"100530","Type":"Chapter","Date":"2019-03-17 01:43:39","ChapterName":""},{"Chapter":"100520","Type":"Chapter","Date":"2019-03-17 01:43:39","ChapterName":""},{"Chapter":"100510","Type":"Chapter","Date":"2019-03-17 01:43:39","ChapterName":""},{"Chapter":"100500","Type":"Chapter","Date":"2019-03-17 01:43:39","ChapterName":""},{"Chapter":"100490","Type":"Chapter","Date":"2019-03-17 01:43:39","ChapterName":""},{"Chapter":"100480","Type":"Chapter","Date":"2019-03-17 01:43:39","ChapterName":""},{"Chapter":"100470","Type":"Chapter","Date":"2019-03-17 01:43:39","ChapterName":""},{"Chapter":"100460","Type":"Chapter","Date":"2019-03-17 01:43:39","ChapterName":""},{"Chapter":"100450","Type":"Chapter","Date":"2019-03-17 01:43:39","ChapterName":""},{"Chapter":"100440","Type":"Chapter","Date":"2019-03-17 01:43:39","ChapterName":""},{"Chapter":"100430","Type":"Chapter","Date":"2019-03-17 01:43:39","ChapterName":""},{"Chapter":"100420","Type":"Chapter","Date":"2019-03-17 01:43:39","ChapterName":""},{"Chapter":"100410","Type":"Chapter","Date":"2019-03-17 01:43:38","ChapterName":""},{"Chapter":"100400","Type":"Chapter","Date":"2019-03-17 01:43:38","ChapterName":""},{"Chapter":"100390","Type":"Chapter","Date":"2019-03-17 01:43:38","ChapterName":""},{"Chapter":"100380","Type":"Chapter","Date":"2019-03-17 01:43:38","ChapterName":""},{"Chapter":"100370","Type":"Chapter","Date":"2019-03-17 01:43:38","ChapterName":""},{"Chapter":"100360","Type":"Chapter","Date":"2019-03-17 01:43:38","ChapterName":""},{"Chapter":"100350","Type":"Chapter","Date":"2019-03-17 01:43:38","ChapterName":""},{"Chapter":"100340","Type":"Chapter","Date":"2019-03-17 01:43:38","ChapterName":""},{"Chapter":"100330","Type":"Chapter","Date":"2019-03-17 01:43:38","ChapterName":""},{"Chapter":"100320","Type":"Chapter","Date":"2019-03-17 01:43:38","ChapterName":""},{"Chapter":"100310","Type":"Chapter","Date":"2019-03-17 01:43:38","ChapterName":""},{"Chapter":"100300","Type":"Chapter","Date":"2019-03-17 01:43:38","ChapterName":""},{"Chapter":"100290","Type":"Chapter","Date":"2019-03-17 01:43:38","ChapterName":""},{"Chapter":"100280","Type":"Chapter","Date":"2019-03-17 01:43:38","ChapterName":""},{"Chapter":"100270","Type":"Chapter","Date":"2019-03-17 01:43:37","ChapterName":""},{"Chapter":"100260","Type":"Chapter","Date":"2019-03-17 01:43:37","ChapterName":""},{"Chapter":"100250","Type":"Chapter","Date":"2019-03-17 01:43:37","ChapterName":""},{"Chapter":"100240","Type":"Chapter","Date":"2019-03-17 01:43:37","ChapterName":""},{"Chapter":"100230","Type":"Chapter","Date":"2019-03-17 01:43:37","ChapterName":""},{"Chapter":"100220","Type":"Chapter","Date":"2019-03-17 01:43:37","ChapterName":""},{"Chapter":"100210","Type":"Chapter","Date":"2019-03-17 01:43:37","ChapterName":""},{"Chapter":"100200","Type":"Chapter","Date":"2019-03-17 01:43:37","ChapterName":""},{"Chapter":"100190","Type":"Chapter","Date":"2019-03-17 01:43:37","ChapterName":""},{"Chapter":"100180","Type":"Chapter","Date":"2019-03-17 01:43:37","ChapterName":""},{"Chapter":"100170","Type":"Chapter","Date":"2019-03-17 01:43:37","ChapterName":""},{"Chapter":"100160","Type":"Chapter","Date":"2019-03-17 01:43:37","ChapterName":""},{"Chapter":"100150","Type":"Chapter","Date":"2019-03-17 01:43:36","ChapterName":""},{"Chapter":"100140","Type":"Chapter","Date":"2019-03-17 01:43:36","ChapterName":""},{"Chapter":"100130","Type":"Chapter","Date":"2019-03-17 01:43:36","ChapterName":""},{"Chapter":"100120","Type":"Chapter","Date":"2019-03-17 01:43:36","ChapterName":""},{"Chapter":"100110","Type":"Chapter","Date":"2019-03-17 01:43:36","ChapterName":""},{"Chapter":"100100","Type":"Chapter","Date":"2019-03-17 01:43:36","ChapterName":""},{"Chapter":"100090","Type":"Chapter","Date":"2019-03-17 01:43:36","ChapterName":""},{"Chapter":"100080","Type":"Chapter","Date":"2019-03-17 01:43:36","ChapterName":""},{"Chapter":"100070","Type":"Chapter","Date":"2019-03-17 01:43:36","ChapterName":""},{"Chapter":"100060","Type":"Chapter","Date":"2019-03-17 01:43:36","ChapterName":""},{"Chapter":"100050","Type":"Chapter","Date":"2019-03-17 01:43:36","ChapterName":""},{"Chapter":"100040","Type":"Chapter","Date":"2019-03-17 01:43:36","ChapterName":""},{"Chapter":"100030","Type":"Chapter","Date":"2019-03-17 01:43:36","ChapterName":""},{"Chapter":"100020","Type":"Chapter","Date":"2019-03-17 01:43:36","ChapterName":""},{"Chapter":"100010","Type":"Chapter","Date":"2019-03-17 01:43:36","ChapterName":""}];
+			vm.NumSubs = 1605;
+			vm.Subbed = false;
+			vm.Notification = true;
+			vm.LastChapterRead = "";
+			vm.IsAdmin = false;
+			vm.RelatedSeriesJSON = [{"OrderID":4,"IndexName":"Platinum-End","SeriesName":"Platinum End"},{"OrderID":3,"IndexName":"Bakuman","SeriesName":"Bakuman"},{"OrderID":2,"IndexName":"Blue-Dragon-Ral-Grado","SeriesName":"Blue Dragon Ral Grado"},{"OrderID":1,"IndexName":"School-Judgment-Gakkyu-Houtei","SeriesName":"School Judgment Gakkyu Hotei"}];
+			
+			vm.Subbing = false;
+			vm.Subscribe = function(){
+				$("#AuthModal").modal("show");
+
+			};
+			if(window.location.hash == "#email") {
+				ga('send', 'event', {
+					'eventCategory'	: "Email Click",
+					'eventAction'	: "Death Note",
+					'eventLabel'	: "Manga Info"
+				});
+			}
+			
+			vm.PageOne="-page-1","yes"==Cookies.get("FullPage")&&(vm.PageOne=""),vm.Unavailable=!1,"#unavailable"==window.location.hash&&(vm.Unavailable=!0),vm.FormatDate=function(e){var t=moment(e).subtract(9,"hour"),n=moment(),m=n.diff(t,"hours");return n.isSame(t,"d")?moment(e).subtract(9,"hour").fromNow():m<24?moment(e).subtract(9,"hour").calendar():moment(e).subtract(9,"hour").format("L")},vm.IsNew=function(e){var t=moment(e).subtract(1,"hour");return moment().diff(t,"hours")<24},vm.ChapterDisplay=function(e){var t=parseInt(e.slice(1,-1)),n=e[e.length-1];return 0==n?t:t+"."+n},vm.ChapterURLEncode=function(e){Index="";var t=e.substring(0,1);1!=t&&(Index="-index-"+t);var n=parseInt(e.slice(1,-1)),m="",a=e[e.length-1];return 0!=a&&(m="."+a),"-chapter-"+n+m+Index+vm.PageOne+".html"},vm.ShowInfoMobile=!1,vm.LimitChapter=10,vm.ToggleNotification=function(){vm.Notification=!vm.Notification,$http({method:"POST",url:"notification.php",data:{IndexName:vm.IndexName,Notification:vm.Notification}}).then(function(e){},function(e){})},vm.Comments=[],vm.GettingComments=!0,vm.ReplyCount=0,vm.GetComments=function(){vm.GettingComments=!0,$http({method:"POST",url:"comment.get.php",data:{IndexName:vm.IndexName}}).then(function(e){if(e.data.success)for(vm.Comments=e.data.val,vm.ReplyCount=0,i=0;i<vm.Comments.length;i++)vm.ReplyCount+=parseInt(vm.Comments[i].ReplyCount);else vm.CommentsWarning=e.data.val;vm.GettingComments=!1},function(e){vm.CommentsWarning="Network Error. Please try again later.",vm.GettingComments=!1})},vm.GetComments(),vm.Commenting=!1,vm.Comment=function(){vm.Commenting=!0,grecaptcha.execute(vm.CaptchaPublicKey,{action:"homepage"}).then(function(e){$http({method:"POST",url:"comment.submit.php",data:{IndexName:vm.IndexName,CommentContent:vm.CommentContent,Captcha:e}}).then(function(e){if(e.data.success)for(vm.Comments=e.data.val,vm.CommentContent="",vm.ReplyCount=0,i=0;i<vm.Comments.length;i++)vm.ReplyCount+=parseInt(vm.Comments[i].ReplyCount);else alert(e.data.val);vm.Commenting=!1},function(e){alert("Network Error. Please try again later."),vm.Commenting=!1})})},vm.DeleteComment=function(e){$http({method:"POST",url:"comment.delete.php",data:{CommentID:e.CommentID,IndexName:vm.IndexName}}).then(function(e){if(e.data.success)for(vm.Comments=e.data.val,vm.ReplyCount=0,i=0;i<vm.Comments.length;i++)vm.ReplyCount+=parseInt(vm.Comments[i].ReplyCount);else alert(e.data.val)},function(e){alert("Network Error. Please try again later.")})},vm.ToggleLike=function(e){e.Liked=!e.Liked,$http({method:"POST",url:"comment.like.php",data:{CommentID:e.CommentID,Liked:e.Liked}}).then(function(e){},function(e){alert(e.data)}),e.Liked?e.LikeCount++:e.LikeCount--},vm.Reply=function(e){e.Replying=!0,grecaptcha.execute(vm.CaptchaPublicKey,{action:"homepage"}).then(function(t){$http({method:"POST",url:"comment.reply.php",data:{TargetID:e.CommentID,ReplyMessage:e.ReplyMessage,Captcha:t}}).then(function(t){t.data.success?(e.ReplyLimit++,vm.ReplyCount++,e.ReplyMessage="",e.Replies=t.data.val):alert(t.data.val),e.Replying=!1},function(t){alert("Network Error. Please try again later."),e.Replying=!1})})},vm.DeleteReply=function(e,t){$http({method:"POST",url:"reply.delete.php",data:{CommentID:t.CommentID,TargetID:e.CommentID}}).then(function(t){t.data.success?(e.Replies=t.data.val,vm.ReplyCount--):alert(t.data.val)},function(e){alert("Network Error. Please try again later.")})},vm.ShowReplySection=function(e){e.ShowReply=!0,ReplyBoxID="#Reply"+e.CommentID,$("html, body").animate({scrollTop:$(ReplyBoxID).offset().top-200},500,function(){$(ReplyBoxID).find("textarea").focus()})},vm.ShowAllReplies=function(e){e.ShowMoreHide=!0,$http({method:"POST",url:"reply.get.php",data:{TargetID:e.CommentID}}).then(function(t){t.data.success?(e.Replies=t.data.val,e.ReplyLimit=100):alert(t.data.val),e.ShowMoreHide=!1},function(t){alert("Network Error. Please try again later."),e.ShowMoreHide=!1})};
+		};
+		app.controller("MainCtrl", MainFunction);
+	</script>
+</body>
+</html>
