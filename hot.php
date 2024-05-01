@@ -1,0 +1,427 @@
+
+<!doctype html>
+<html lang="en" ng-app="MainApp" ng-controller="MainCtrl as vm">
+<head>
+    <title>Hot Manga Update</title>
+	<meta name="description" content="Hot Manga Update on PikuManga. Check out popular manga release today, this week, this month, etc.">
+
+	<!-- META OG -->
+	<meta property="og:type" content="article" />
+	<meta property="og:title" content="Hot Manga Update" />
+	<meta property="og:description" content="Hot Manga Update on PikuManga. Check out popular manga release today, this week, this month, etc." />
+	<meta property="og:site_name" content="" />
+	<meta property="og:url" content="https://pikumanga.netlify.app//hot.php" />
+	<meta property="og:image" content="https://pikumanga.netlify.app//media/home.image.jpg" />
+	<meta property="fb:admins" content="100009420386052" />
+	<meta property="fb:app_id" content="1609343042699696" />
+
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:site" content="@animemangastuff">
+	<meta name="twitter:title" content="Hot Manga Update">
+	<meta name="twitter:description" content="Hot Manga Update on PikuManga. Check out popular manga release today, this week, this month, etc." />
+	<meta name="twitter:creator" content="@animemangastuff">
+	<meta name="twitter:image:src" content="https://pikumanga.netlify.app//media/home.image.jpg">
+	<meta name="twitter:domain" content="PikuManga123.com">
+
+	<!-- Canonical Tag -->
+	<link rel="canonical" href="https://pikumanga.netlify.app//hot.php">
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, shrink-to-fit=no, user-scalable=no" />
+
+	<!-- favicon -->
+	<link rel="shortcut icon" href="/media/favicon.png">
+
+    <!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+
+	<!-- ANGULAR STUFF -->
+	<!--
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.8/angular.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-sanitize/1.7.8/angular-sanitize.min.js"></script><!-- Sanitize -->
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.0/angular.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.0/angular-sanitize.min.js"></script><!-- Sanitize -->
+	
+	<script>
+		var app = angular.module("MainApp", ['ngSanitize']);
+	</script>
+
+
+	<!-- ADS -->
+	<!--
+	<script data-ad-client="ca-pub-9295862422587053" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+	-->
+
+
+	<!-- Captcha -->
+	<script src="https://www.google.com/recaptcha/api.js?render=6Ld2-aMZAAAAAD9ESUQP8ijtHxtoWAwv2DOsJJ0n"></script>
+
+	<!-- Custom CSS -->
+	<style>body,html{background-color:#000000;}</style>
+
+	<!-- STANDARD CSS -->
+	<style>*{min-height:.01px}body,html{height:100%}.ng-cloak,[ng-cloak],[ng\:cloak]{display:none!important}a:active,a:focus{outline:0;-moz-outline-style:none}.back-to-top{position:fixed;bottom:3em;right:0;text-decoration:none;font-size:20px;padding:4px 10px 7px 12px;display:none;z-index:100000;border:1px solid #ccc;border-right:none;color:#ccc;background-color:#fff}.grecaptcha-badge{opacity:0!important}h1{font-size:30px}input::placeholder,textarea::placeholder{color:#ccc!important;opacity:1}input:-ms-input-placeholder,textarea::placeholder{color:#ccc!important}input::-ms-input-placeholder,textarea::placeholder{color:#ccc!important}.btn,input,select,textarea{box-shadow:none!important;-moz-box-shadow:none!important;-webkit-box-shadow:none!important}.required{color:red}.bg-dark{background-color:#444!important}.MainDiv{min-height:calc(100% - 156px);margin-bottom:-95px}.TopContainer{padding-top:20px;padding-bottom:20px}.footer,.push{height:95px}.footer{padding:20px 0;text-align:center;color:#ccc;font-size:18px}.footer a{margin:0 3px;font-size:14px;color:#fff}.top-20{margin-top:20px}.top-15{margin-top:15px}.top-10{margin-top:10px}.top-5{margin-top:5px}.bottom-20{margin-bottom:20px}.bottom-15{margin-bottom:15px}.bottom-10{margin-bottom:10px}.bottom-5{margin-bottom:5px}#Nav{background-color:#2B2B2B}.navbar{padding:0!important}.navbar-brand{margin:0!important;padding:10px 15px}.nav-item a{color:#999;padding:10px 15px!important}.NavBtnSm{color:#999;padding:12px 15px}#Nav .dropdown-item:hover,.NavBtnSm:hover,.nav-item:hover,.navbar-brand:hover{color:#fff;background:#666;text-decoration:none!important}.NavBtnSm.active,.nav-item.active{color:#fff}#Nav .dropdown-menu-right{border:none;margin:0;padding:0;border-radius:0;background:#343a40}.MenuSmall{margin-top:10px!important}.MenuSmall a{padding-left:10px;padding-right:10px;color:#fff}#TopBigLogo{max-height:80px;margin-top:10px;margin-bottom:10px}#TopSmallLogo{max-width:200px;margin-top:10px}.QuickSearch *{border-radius:0;border:none}.QuickSearch .form-control{border-right:none}.QuickSearch .input-group-text{background-color:#fff;padding-left:15px;padding-right:15px}.QuickSearch .mx-auto{background-color:#ff0;margin:10px;text-align:center}#Nav .LogoBox{text-align:left}@media(max-width:768px){#Nav .LogoBox{text-align:center}}.QuickSearch .SearchResult{position:absolute;top:42px;left:0;padding:15px;width:100%;z-index:1000}.QuickSearch .SearchResultLabel{display:inline-block;max-width:calc(100% - 60px);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.QuickSearch .SearchResultCover{background-color:#ddeaff}.SearchLink{display:block!important;color:#343a40}.SearchLink:hover{cursor:pointer;color:#fff;background-color:#247D8F;text-decoration:none}.NoResults{padding:10px;color:#000}.QuickSearch .input-group *{border-color:#bbb}.navbar-toggler{border:none;box-shadow:none!important;-moz-box-shadow:none!important;-webkit-box-shadow:none!important;outline:0!important}.navbar-brand{font-size:16px;color:#999c9f!important}.navbar-brand:hover{color:#cccdcf!important}.navbar-brand.active{color:#fff!important}.phone-link{color:#fff!important}.phone-link:hover{color:#ccc!important}.MainContainer{min-height:calc(100vh - 244px);padding-top:15px;padding-bottom:15px}@media(max-width:768px){.MainContainer{padding-top:10px;padding-bottom:10px}}.Box{margin-top:15px;margin-bottom:15px}@media(max-width:768px){.Box{margin-top:5px;margin-bottom:5px}}.BoxHeader{background:#247D8F;padding:10px 15px;color:#fff;font-size:18px}.BoxBody{background:#fff;padding:10px 15px}.AnnouncementLink{color:#974f56}.AnnouncementLink:hover{color:red;text-decoration:none}.AnnouncementLink .Box{background:#f8d7da;padding:10px 15px}#Footer{text-align:center;background:#444;height:100px;padding-top:25px;color:#eee}#Footer a{margin:0 5px;color:#fff}</style>
+
+
+
+	<!-- Custom Styling -->
+	<style>.BoxBody a:hover{text-decoration:none}.Chapter{margin:10px 0 10px 0!important;padding:0!important}.Chapter .Image{margin:0!important;padding:0!important;max-width:90px!important;height:90px!important;overflow:hidden;position:relative;background:#000}.Chapter .Image img{max-width:100%}.Chapter .Label{margin:0!important;padding:10px 15px!important;background:#f2f2f2;min-width:calc(100% - 90px)!important}.Chapter .SeriesName{font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.Chapter .SeriesName .fa-rss{color:orange}.Chapter .ChapterLabel .fa-file{margin-right:4px}.Chapter .ChapterLabel,.Chapter .DateLabel{color:gray;font-size:14px}.HotUpdateBody{padding:0}.HotUpdateMobile{padding:5px 15px}.ItemHead{background:linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7));font-size:14px;vertical-align:middle;min-height:40px;text-shadow:2px 2px 4px #000;padding:5px;text-align:center;position:absolute;z-index:2;right:20px;bottom:0;left:20px}.ItemHead span{display:flex;justify-content:center;flex-direction:column;height:40px;overflow:hidden}.HotUpdate{margin:0;padding:0 0 10px 0}.HotUpdate .PopLink{color:#fff;width:16.66%;height:220px;padding:20px;margin:0;overflow:hidden}.HotUpdate .PopLink a{color:#fff}.HotUpdate .PopLink a:hover{color:#ff0}.HotUpdate .PopLink img{width:100%;min-height:220px}.MoreHot,.MoreHot:hover{color:#fff;text-decoration:none}.HotUpdate img{width:100%}</style>
+</head>
+<body>
+
+	<div id="Nav">
+		<div class="container">
+			<div class="row align-items-center h-100">
+				<div class="col-lg-8 col-md-7 mx-auto LogoBox">
+					<a href="/" title="PikuManga">
+						<img id="TopBigLogo" class="d-none d-md-inline-block" src="/media/navbar.brand.png">
+						<img id="TopSmallLogo" class="d-md-none d-inline-block" src="/media/navbar.brand.small.png">
+					</a>
+				</div>
+				<div class="col-lg-4 col-md-5 mx-auto QuickSearch">
+					<div class="input-group mx-auto">
+						<input type="text" class="form-control form-control-lg" placeholder="Quick Search..." ng-model="vm.Keyword" ng-keyup="$event.keyCode == 13 && vm.QuickSearchSubmit()">
+						<div class="input-group-append">
+							<span class="input-group-text">
+								<i class="fa fa-search"></i>
+							</span>
+						</div>
+					</div>
+					<div class="SearchResult" ng-if="vm.Keyword.length > 0 && vm.QuickSearching" ng-cloak>
+						<div class="SearchResultCover">
+							<div class="NoResults">
+								<i class="fa fa-spinner fa-spin"></i> Searching...
+							</div>
+						</div>
+					</div>
+					<div class="SearchResult" ng-if="vm.QuickResult.length == 0 && vm.Keyword.length > 1 && !vm.QuickSearching" ng-cloak>
+						<div class="SearchResultCover">
+							<div class="NoResults">
+								No Results
+							</div>
+						</div>
+					</div>
+					<div class="SearchResult" ng-if="vm.QuickResult.length > 0 && vm.Keyword.length > 1 && !vm.QuickSearching" ng-cloak>
+						<div class="SearchResultCover">
+							<a href="/manga/{{Result.i}}" class="SearchLink" ng-repeat="Result in vm.FilteredArr = (vm.QuickResult | filter:vm.Keyword | limitTo:10)">
+								<img ng-src="https://temp.compsci88.com/cover/{{Result.i}}.jpg" style="width:50px; height:50px; object-fit:cover; margin-right:5px;">
+								<span class="SearchResultLabel" ng-bind-html="Result.s"></span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<nav class="navbar navbar-expand-md navbar-dark bg-dark">
+			<div class="container">
+				<a class="navbar-brand" href="/">
+					<i class="fas fa-home"></i>
+					<span class="d-none d-md-inline">
+						Home
+					</span>
+				</a>
+
+				<div class="d-inline-block d-md-none mr-auto">
+					<a href="/directory/" class="NavBtnSm">
+						<i class="far fa-folder-open"></i>
+					</a>
+					<a href="/search/" class="NavBtnSm">
+						<i class="fas fa-search"></i>
+					</a>
+					<a href="/discussion/" class="NavBtnSm">
+						<i class="far fa-comments"></i>
+					</a>
+				</div>
+
+				<div class="d-inline-block d-md-none">
+					<a class="NavBtnSm" href="#"  data-toggle="modal" data-target="#AuthModal" ng-click="vm.AuthWarning = ''">
+						<i class="fas fa-sign-in-alt"></i>
+						Login
+					</a>
+				</div>
+
+				<div class="collapse navbar-collapse d-none d-md-flex">
+					<ul class="navbar-nav mr-auto">
+						<li class="nav-item">
+							<a href="/directory/" class="nav-link">
+								<i class="far fa-folder-open"></i>
+								Directory
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="/search/" class="nav-link">
+								<i class="fas fa-search"></i>
+								Search
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="/discussion/" class="nav-link">
+								<i class="far fa-comments"></i>
+								Discussion
+							</a>
+						</li>
+					</ul>
+
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item d-none d-md-block">
+							<a href="#" class="nav-link" data-toggle="modal" data-target="#AuthModal" ng-click="vm.AuthWarning = ''">
+								<i class="fas fa-sign-in-alt"></i>
+								Login
+							</a>
+							
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</div>
+	
+
+	<style>.AuthLink{color:gray}.AuthLink a{color:gray;margin-right:15px}.AuthLink a:active,.AuthLink a:focus,.AuthLink a:hover{text-decoration:none}</style>
+	<!-- Modal -->
+	<div class="modal fade" id="AuthModal" tabindex="-1" role="dialog" data-backdrop="static" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLabel">
+						<span ng-if="vm.AuthType == 'Login'">
+							<i class="fas fa-sign-in-alt"></i>
+							Login
+						</span>
+						<span ng-if="vm.AuthType == 'Register'">
+							<i class="fas fa-user-plus"></i>
+							New Account
+						</span>
+						<span ng-if="vm.AuthType == 'Reset'">
+							<i class="fas fa-key"></i>
+							Reset Password
+						</span>
+					</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<div class="bottom-10">
+						Email Address:
+						<input class="form-control" type="email" ng-model="vm.AuthEmail" ng-disabled="vm.Authenticating" ng-keyup="$event.keyCode == 13 && vm.AuthToggle()">
+					</div>
+
+					<div class="bottom-10" ng-if="vm.AuthType == 'Register'">
+						Username:
+						<input class="form-control" type="text" ng-model="vm.AuthUsername" ng-disabled="vm.Authenticating" ng-keyup="$event.keyCode == 13 && vm.AuthToggle()">
+					</div>
+
+					<div class="bottom-10" ng-if="vm.AuthType != 'Reset'">
+						Password:
+						<input class="form-control" type="password" ng-model="vm.AuthPassword" ng-disabled="vm.Authenticating" ng-keyup="$event.keyCode == 13 && vm.AuthToggle()">
+					</div>
+
+					<span class="AuthLink" ng-if="vm.AuthType != 'Register'">
+						&middot; 
+						<a href="#" onclick="DoNothing(event)" ng-if="!vm.Authenticating" ng-click="vm.ResetSuccess = ''; vm.AuthType = 'Register'">Register</a>
+						<span style="color:#ccc; margin-right:15px;" ng-if="vm.Authenticating">Register</span>
+					</span>
+
+					<span class="AuthLink" ng-if="vm.AuthType != 'Login'">
+						&middot; 
+						<a href="#" onclick="DoNothing(event)" ng-if="!vm.Authenticating" ng-click="vm.ResetSuccess = ''; vm.AuthType = 'Login'">Login</a>
+						<span style="color:#ccc; margin-right:15px;" ng-if="vm.Authenticating">Login</span>
+					</span>
+
+					<span class="AuthLink" ng-if="vm.AuthType != 'Reset'">
+						&middot; 
+						<a href="#" onclick="DoNothing(event)" ng-if="!vm.Authenticating" ng-click="vm.ResetSuccess = ''; vm.AuthType = 'Reset'">Forgot Password</a>
+						<span style="color:#ccc; margin-right:15px;" ng-if="vm.Authenticating">Forgot Password</span>
+					</span>
+
+					<div class="alert alert-danger top-15" style="margin-bottom:0px;" ng-if="vm.AuthWarning != ''">
+						<i class="fas fa-exclamation-triangle"></i>
+						{{vm.AuthWarning}}
+					</div>
+					
+					<div class="alert alert-success top-15" style="margin-bottom:0px;" ng-if="vm.ResetSuccess">
+						<i class="fas fa-check"></i>
+						{{vm.ResetSuccess}}
+					</div>
+				</div>
+				<div class="modal-body" style="border-top:1px solid #DDDDDD;">
+					<button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Close</button>
+					
+					<span class="float-right">
+						<button type="button" class="btn btn-primary" ng-if="vm.AuthType == 'Login'" ng-disabled="vm.Authenticating" ng-click="vm.Login()">
+							<i class="fa fa-spin fa-spinner" ng-if="vm.Authenticating"></i>
+							Login
+						</button>
+						<button type="button" class="btn btn-success" ng-if="vm.AuthType == 'Register'" ng-disabled="vm.Authenticating" ng-click="vm.Register()">
+							<i class="fa fa-spin fa-spinner" ng-if="vm.Authenticating"></i>
+							Register
+						</button>
+						<button type="button" class="btn btn-danger" ng-if="vm.AuthType == 'Reset'" ng-disabled="vm.Authenticating" ng-click="vm.ResetPassword()">
+							<i class="fa fa-spin fa-spinner" ng-if="vm.Authenticating"></i>
+							Reset Password
+						</button>
+					</span>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+	<div class="container MainContainer">
+		<div class="row">
+
+			<div class="col-lg-12">
+				
+				<!-- Hot Update -->
+				<div class="Box">
+					
+					<div class="BoxHeader">
+						<i class="fas fa-fire-alt"></i>
+						Hot Update
+					</div>
+
+					<div class="BoxBody" style="padding:0px;" ng-cloak>
+						<!-- Desktop -->
+						<div class="row d-none d-xl-flex HotUpdate">
+							<div class="col-2 PopLink" ng-repeat="Chapter in vm.HotUpdateJSON | limitTo:66">
+								<a 	href="/read-online/{{Chapter.IndexName}}{{vm.ChapterURLEncode(Chapter.Chapter)}}{{vm.PageOne}}.html" 
+									title="{{Chapter.SeriesName}} Chapter {{vm.ChapterDisplay(Chapter.Chapter)}}" 
+									ng-if="Chapter.IsEdd == false">
+									<img ng-src="https://temp.compsci88.com/cover/{{Chapter.IndexName}}.jpg">
+									<div class="ItemHead">
+										<span>{{vm.DisplayHotSeries(Chapter.SeriesName)}} {{vm.ChapterDisplay(Chapter.Chapter)}}</span>
+									</div>
+								</a>
+
+								<a 	href="{{Chapter.TargetURL}}" 
+									target="_BLANK"
+									ng-if="Chapter.IsEdd == true">
+									<img ng-src="https://pikumanga.netlify.app//edd/{{Chapter.ImagePath}}">
+									<div class="ItemHead">
+										<span>{{Chapter.Title}}</span>
+									</div>
+								</a>
+							</div>
+						</div>
+
+						<!-- Mobile -->
+						<div class="HotUpdateMobile">
+							<div class="row">
+								<div class="col-md-6" ng-repeat="Chapter in vm.HotUpdateJSON | limitTo:66">
+									<a 	href="/read-online/{{Chapter.IndexName}}{{vm.ChapterURLEncode(Chapter.Chapter)}}{{vm.PageOne}}.html" 
+										title="{{Chapter.SeriesName}} Chapter {{vm.ChapterDisplay(Chapter.Chapter)}}"
+										ng-if="Chapter.IsEdd == false">
+										<div class="row d-flex d-xl-none Chapter">
+											<div class="col-4 Image">
+												<img ng-src="https://temp.compsci88.com/cover/{{Chapter.IndexName}}.jpg">
+											</div>
+											<div class="col-8 Label">
+												<div class="SeriesName">
+													<i class="fas fa-rss" ng-if="vm.SubArr.indexOf(Chapter.SeriesID) !== -1"></i> <span ng-bind-html="Chapter.SeriesName"></span>
+												</div>
+												<div class="ChapterLabel">
+													<i class="far fa-file"></i> Chapter {{vm.ChapterDisplay(Chapter.Chapter)}}
+												</div>
+												<div class="DateLabel">
+													<i class="far fa-clock"></i> {{vm.FormatDate(Chapter.Date)}}
+												</div>
+											</div>
+										</div>
+									</a>
+
+									<a ng-if="Chapter.IsEdd == true" href="{{Chapter.TargetURL}}" target="_BLANK">
+										<div class="row d-flex d-xl-none Chapter">
+											<div class="col-4 Image">
+												<!--
+													<img ng-src="https://temp.compsci88.com/cover/{{Chapter.IndexName}}.jpg">
+												-->
+												<img ng-src="https://pikumanga.netlify.app//edd/{{Chapter.ImagePath}}">
+											</div>
+											<div class="col-8 Label">
+												<div class="SeriesName">
+													{{Chapter.Title}}
+												</div>
+												<div class="ChapterLabel" style="color:black;">
+													{{Chapter.Description}}
+												</div>
+												<div class="DateLabel">
+													<span ng-bind-html="Chapter.FooterLabel"></span>
+												</div>
+											</div>
+										</div>
+									</a>
+								</div>
+							</div>
+						</div>
+						
+
+					</div>
+					
+				</div>
+				
+			</div>
+
+
+
+
+		</div>
+	</div>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+<a href="#" class="back-to-top"><span class="fa fa-chevron-up"></span></a>
+<script>jQuery(document).ready(function(){var a=400,o=500;jQuery(window).scroll(function(){jQuery(this).scrollTop()>a?(jQuery(".back-to-top").fadeIn(o),$(".navbarRegular").hide(),$(".navbarNavTop").show()):(jQuery(".back-to-top").fadeOut(o),$(".navbarRegular").show(),$(".navbarNavTop").hide())}),jQuery(".back-to-top").click(function(a){return a.preventDefault(),jQuery("html, body").animate({scrollTop:0},o),!1})});</script>
+
+<!-- DoNothing -->
+<script>function DoNothing(t){t.preventDefault()}$("body").on("click","a",function(t){href=$(this).attr("href"),"#"==href&&t.preventDefault()});</script>
+
+<div id="Footer"><a href="/">Home</a><a href="/contact/">Contact</a><a href="/privacy/">Privacy</a><div>Copyright © PikuManga 2024</div></div>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/js-cookie@beta/dist/js.cookie.min.js"></script>
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-92638121-5"></script>
+	<script>function gtag(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],gtag("js",new Date),gtag("config","UA-92638121-5");</script>
+
+	<script>
+		function MainFunction($http){
+			var vm = this;
+
+vm.QuickSearching=!1,vm.QuickResult=[],vm.QuickSearch=function(){vm.QuickSearching=!0,$http({method:"POST",url:"/_search.php"}).then(function(c){void 0===c.data.success?(vm.QuickResult=c.data,vm.QuickSearching=!1):(vm.QuickSearchErr=c.data.val,vm.QuickResult=[])},function(c){vm.QuickSearching=!1})},vm.QuickSearch(),vm.FilteredArr=[],vm.QuickSearchSubmit=function(){1==vm.FilteredArr.length?window.location.href="/manga/"+vm.FilteredArr[0].i:window.location.href="/search/?name="+vm.Keyword};
+
+
+
+			vm.FilteredArr = [];
+			vm.QuickSearchSubmit = function(){
+				if(vm.FilteredArr.length == 1){
+					window.location.href = "/manga/" +vm.FilteredArr[0].i
+				}else{
+					window.location.href = "/search/?name=" +vm.Keyword
+				}
+			};			
+			vm.AuthType="Login",vm.Authenticating=!1,vm.AuthWarning="",vm.ResetSuccess="",vm.Login=function(){vm.Authenticating=!0,vm.AuthWarning="",vm.ResetSuccess="",$http({method:"POST",url:"/auth/login.php",data:{EmailAddress:vm.AuthEmail,Password:vm.AuthPassword}}).then(function(t){t.data.success?location.reload():"old_db"==t.data.val?(vm.AuthType="Register",vm.AuthWarning="We just transfered our database. Please register again with this Email Address and all of your subscription will transfer automatically."):vm.AuthWarning=t.data.val,vm.Authenticating=!1},function(t){vm.AuthWarning="Network Error. Please try again later.",vm.Authenticating=!1})},vm.Register=function(){vm.Authenticating=!0,vm.AuthWarning="",vm.ResetSuccess="",grecaptcha.execute("6Ld2-aMZAAAAAD9ESUQP8ijtHxtoWAwv2DOsJJ0n",{action:"homepage"}).then(function(t){vm.Captcha=t,$http({method:"POST",url:"/auth/register.php",data:{EmailAddress:vm.AuthEmail,Username:vm.AuthUsername,Password:vm.AuthPassword,Captcha:vm.Captcha}}).then(function(t){t.data.success?location.reload():vm.AuthWarning=t.data.val,vm.Authenticating=!1},function(t){vm.AuthWarning="Network Error. Please try again later.",vm.Authenticating=!1})})},vm.ResetPassword=function(){vm.Authenticating=!0,vm.AuthWarning="",vm.ResetSuccess="",$http({method:"POST",url:"/auth/reset.php",data:{EmailAddress:vm.AuthEmail}}).then(function(t){t.data.success?(vm.AuthEmail="",vm.AuthUsername="",vm.AuthPassword="",vm.ResetSuccess="If the email address exists, we will send a link to reset your password in a few seconds. If you don't see the email, check other places it might be, like your junk, spam, social, or other folders."):vm.AuthWarning=t.data.val,vm.Authenticating=!1},function(t){vm.AuthWarning="Network Error. Please try again later.",vm.Authenticating=!1})},vm.AuthToggle=function(){"Login"==vm.AuthType?vm.Login():"Register"==vm.AuthType?vm.Register():"Reset"==vm.AuthType&&vm.ResetPassword()};
+
+
+			vm.HotArr = ['7','4224','4446','12','5280','2516','4504','153','4904','5626','6101','111','6549','3289','5255','5390','5188','89','6279','5140','2772','361','2197','3983','5600','4585','3205','3','158','5743','24','4379','5898','4401','4805','2130','5394','5819','4945','5252','5480','3824','6','157','4742','3378','7601','3266','5437','4536','6392','5399','5992','6846','4663','3321','3477','5729','6439','4522','6735','6541','5574','2478','42','5822','288','5028','6390','6102','6940','6493','5628','6438','3361','5599','2209','5771','1693','4502','5304','5878','5197','4315','3386','6655','4494','4940','2503','235','4171','317','4','3724','3575','2563','3923','5253','20','5579'];
+			vm.SubArr = [''];
+			vm.HotUpdateJSON = [{"SeriesID":"6439","IndexName":"The-Game-That-I-Came-From","SeriesName":"The Game That I Come From","Date":"2024-05-01T00:06:55+00:00","Chapter":"102710","IsEdd":false},{"SeriesID":"6493","IndexName":"Return-of-the-Legendary-Spear-Knight","SeriesName":"The Legendary Spearman Returns","Date":"2024-04-30T17:12:56+00:00","Chapter":"101350","IsEdd":false},{"SeriesID":"5390","IndexName":"Legend-of-the-Northern-Blade","SeriesName":"The Legend of the Northern Blade","Date":"2024-04-30T17:11:43+00:00","Chapter":"101870","IsEdd":false},{"SeriesID":"4504","IndexName":"Chainsaw-Man","SeriesName":"Chainsaw Man","Date":"2024-04-30T17:11:19+00:00","Chapter":"101640","IsEdd":false},{"SeriesID":"4315","IndexName":"Ijiranaide-Nagatoro-san","SeriesName":"Don't Toy With Me, Miss Nagatoro","Date":"2024-04-30T02:17:11+00:00","Chapter":"101490","IsEdd":false},{"SeriesID":"4536","IndexName":"Shuumatsu-No-Valkyrie","SeriesName":"Record of Ragnarok","Date":"2024-04-29T23:50:37+00:00","Chapter":"100890","IsEdd":false},{"SeriesID":"6101","IndexName":"Dandadan","SeriesName":"Dandadan","Date":"2024-04-29T23:49:39+00:00","Chapter":"101500","IsEdd":false},{"SeriesID":"3205","IndexName":"Black-Clover","SeriesName":"Black Clover","Date":"2024-04-29T23:49:11+00:00","Chapter":"103700","IsEdd":false},{"SeriesID":"4494","IndexName":"Skeleton-Soldier-Couldnt-Protect-The-Dungeon","SeriesName":"The Skeleton Soldier Failed to Defend the Dungeon","Date":"2024-04-29T06:03:25+00:00","Chapter":"102660","IsEdd":false},{"SeriesID":"2197","IndexName":"Wind-Breaker","SeriesName":"Wind Breaker","Date":"2024-04-29T03:19:28+00:00","Chapter":"401030","IsEdd":false},{"SeriesID":"158","IndexName":"Tower-Of-God","SeriesName":"Tower of God","Date":"2024-04-29T03:19:21+00:00","Chapter":"301920","IsEdd":false},{"SeriesID":"4171","IndexName":"Kusuriya-No-Hitorigoto","SeriesName":"The Apothecary Diaries","Date":"2024-04-28T23:24:07+00:00","Chapter":"100720","IsEdd":false},{"SeriesID":"4945","IndexName":"Undead-Unluck","SeriesName":"Undead Unluck","Date":"2024-04-28T17:50:18+00:00","Chapter":"102050","IsEdd":false},{"SeriesID":"4663","IndexName":"Spy-X-Family","SeriesName":"Spy x Family","Date":"2024-04-28T17:49:52+00:00","Chapter":"100970","IsEdd":false},{"SeriesID":"5626","IndexName":"Sakamoto-Days","SeriesName":"Sakamoto Days","Date":"2024-04-28T17:49:43+00:00","Chapter":"101640","IsEdd":false},{"SeriesID":"7","IndexName":"One-Piece","SeriesName":"One Piece","Date":"2024-04-28T17:49:24+00:00","Chapter":"111130","IsEdd":false},{"SeriesID":"2516","IndexName":"Boku-No-Hero-Academia","SeriesName":"My Hero Academia","Date":"2024-04-28T17:48:51+00:00","Chapter":"104210","IsEdd":false},{"SeriesID":"4742","IndexName":"Mission-Yozakura-Family","SeriesName":"Mission: Yozakura Family","Date":"2024-04-28T17:48:34+00:00","Chapter":"102240","IsEdd":false},{"SeriesID":"7601","IndexName":"Kagurabachi","SeriesName":"Kagurabachi","Date":"2024-04-28T17:48:07+00:00","Chapter":"100310","IsEdd":false},{"SeriesID":"4224","IndexName":"Jujutsu-Kaisen","SeriesName":"Jujutsu Kaisen","Date":"2024-04-28T17:47:59+00:00","Chapter":"102580","IsEdd":false},{"SeriesID":"6102","IndexName":"Blue-Box","SeriesName":"Blue Box","Date":"2024-04-28T17:47:17+00:00","Chapter":"101470","IsEdd":false},{"SeriesID":"4940","IndexName":"The-100-Girlfriends-Who-Really-Really-Really-Really-Really-Love-You","SeriesName":"The 100 Girlfriends Who Really, Really, Really, Really, REALLY Love You","Date":"2024-04-28T04:46:35+00:00","Chapter":"101740","IsEdd":false},{"SeriesID":"3321","IndexName":"Lookism","SeriesName":"Lookism","Date":"2024-04-28T03:59:56+00:00","Chapter":"104890","IsEdd":false},{"SeriesID":"5252","IndexName":"Overgeared","SeriesName":"Overgeared","Date":"2024-04-27T23:46:37+00:00","Chapter":"102250","IsEdd":false},{"SeriesID":"361","IndexName":"Kingdom","SeriesName":"Kingdom","Date":"2024-04-27T14:51:33+00:00","Chapter":"107930","IsEdd":false},{"SeriesID":"317","IndexName":"To-Aru-Kagaku-No-Choudenjihou","SeriesName":"A Certain Scientific Railgun","Date":"2024-04-26T23:44:33+00:00","Chapter":"101540","IsEdd":false},{"SeriesID":"5898","IndexName":"Ranger-Reject","SeriesName":"Go! Go! Loser Ranger!","Date":"2024-04-26T23:44:01+00:00","Chapter":"101360","IsEdd":false},{"SeriesID":"6392","IndexName":"Solo-Max-Level-Newbie","SeriesName":"I'm the Max-Level Newbie","Date":"2024-04-26T02:24:57+00:00","Chapter":"101510","IsEdd":false},{"SeriesID":"5628","IndexName":"Boku-no-Kokoro-no-Yabai-Yatsu","SeriesName":"The Dangers in My Heart","Date":"2024-04-25T22:31:35+00:00","Chapter":"101430","IsEdd":false},{"SeriesID":"5280","IndexName":"Monster-8","SeriesName":"Kaiju No. 8","Date":"2024-04-25T17:57:04+00:00","Chapter":"101060","IsEdd":false},{"SeriesID":"12","IndexName":"Berserk","SeriesName":"Berserk","Date":"2024-04-25T17:56:31+00:00","Chapter":"203760","IsEdd":false},{"SeriesID":"5819","IndexName":"Mercenary-Enrollment","SeriesName":"Teenage Mercenary","Date":"2024-04-25T15:26:59+00:00","Chapter":"101850","IsEdd":false},{"SeriesID":"6846","IndexName":"Kaoru-Hana-wa-Rin-to-Saku","SeriesName":"The Fragrant Flower Blooms With Dignity","Date":"2024-04-25T02:48:57+00:00","Chapter":"101090","IsEdd":false},{"SeriesID":"3983","IndexName":"Mairimashita-Iruma-kun","SeriesName":"Welcome to Demon School! Iruma-kun","Date":"2024-04-25T02:42:15+00:00","Chapter":"103460","IsEdd":false},{"SeriesID":"5437","IndexName":"Please-Go-Home-Akutsu-san","SeriesName":"Please Go Home, Miss Akutsu!","Date":"2024-04-24T23:45:09+00:00","Chapter":"101740","IsEdd":false},{"SeriesID":"5729","IndexName":"Juujika-no-Rokunin","SeriesName":"Juujika no Rokunin","Date":"2024-04-24T23:45:03+00:00","Chapter":"101640","IsEdd":false},{"SeriesID":"3378","IndexName":"Tensei-Shitara-Slime-Datta-Ken","SeriesName":"That Time I Got Reincarnated as a Slime","Date":"2024-04-24T17:41:05+00:00","Chapter":"101170","IsEdd":false},{"SeriesID":"5188","IndexName":"Oshi-no-Ko","SeriesName":"[Oshi No Ko]","Date":"2024-04-24T17:36:32+00:00","Chapter":"101470","IsEdd":false},{"SeriesID":"5394","IndexName":"Nano-Machine","SeriesName":"Nano Machine","Date":"2024-04-24T17:36:22+00:00","Chapter":"102030","IsEdd":false},{"SeriesID":"4522","IndexName":"Kengan-Omega","SeriesName":"Kengan Omega","Date":"2024-04-24T17:36:04+00:00","Chapter":"102580","IsEdd":false},{"SeriesID":"6541","IndexName":"Shinjiteita-Nakama-tachi-ni-Dungeon","SeriesName":"Backstabbed in a Backwater Dungeon","Date":"2024-04-24T15:04:58+00:00","Chapter":"101190","IsEdd":false},{"SeriesID":"6549","IndexName":"Wind-Breaker-NII-Satoru","SeriesName":"Wind Breaker (NII Satoru)","Date":"2024-04-24T00:26:54+00:00","Chapter":"101410","IsEdd":false},{"SeriesID":"5878","IndexName":"Four-Knights-of-the-Apocalypse","SeriesName":"The Seven Deadly Sins - Four Knights of the Apocalypse","Date":"2024-04-24T00:26:28+00:00","Chapter":"101470","IsEdd":false},{"SeriesID":"6940","IndexName":"Mikata-ga-Yowasugite-Hojo-Mahou-ni-Tesshiteita-Kyuutei-Mahoushi","SeriesName":"The Banished Court Magician Aims to Become the Strongest","Date":"2024-04-24T00:26:16+00:00","Chapter":"101190","IsEdd":false},{"SeriesID":"5480","IndexName":"Shangri-La-Frontier","SeriesName":"Shangri-La Frontier","Date":"2024-04-24T00:25:59+00:00","Chapter":"101750","IsEdd":false},{"SeriesID":"3824","IndexName":"Komi-san-Wa-Komyushou-Desu","SeriesName":"Komi Can\u2019t Communicate","Date":"2024-04-24T00:25:32+00:00","Chapter":"104550","IsEdd":false},{"SeriesID":"6735","IndexName":"Gachiakuta","SeriesName":"Gachiakuta","Date":"2024-04-24T00:25:15+00:00","Chapter":"100950","IsEdd":false},{"SeriesID":"5140","IndexName":"Sousou-no-Frieren","SeriesName":"Frieren - Beyond Journey's End","Date":"2024-04-24T00:25:11+00:00","Chapter":"101290","IsEdd":false},{"SeriesID":"4904","IndexName":"Blue-Lock","SeriesName":"Blue Lock","Date":"2024-04-24T00:24:42+00:00","Chapter":"102590","IsEdd":false},{"SeriesID":"5599","IndexName":"The-Max-Level-Hero-Has-Returned","SeriesName":"The Max Level Hero Strikes Back","Date":"2024-04-24T00:07:42+00:00","Chapter":"101620","IsEdd":false},{"SeriesID":"5399","IndexName":"Survival-Story-of-a-Sword-King-in-a-Fantasy-World","SeriesName":"Latna Saga: Survival of a Sword King","Date":"2024-04-24T00:07:23+00:00","Chapter":"102030","IsEdd":false},{"SeriesID":"89","IndexName":"Hajime-No-Ippo","SeriesName":"Hajime no Ippo","Date":"2024-04-24T00:05:53+00:00","Chapter":"114540","IsEdd":false},{"SeriesID":"6438","IndexName":"Leveling-With-The-Gods","SeriesName":"Level Up with the Gods","Date":"2024-04-23T17:14:53+00:00","Chapter":"101120","IsEdd":false},{"SeriesID":"5992","IndexName":"The-Player-That-Cant-Level-Up","SeriesName":"The Player Who Can't Level Up","Date":"2024-04-23T15:04:29+00:00","Chapter":"101450","IsEdd":false},{"SeriesID":"3923","IndexName":"Parallel-Paradise","SeriesName":"Parallel Paradise","Date":"2024-04-23T15:04:22+00:00","Chapter":"102580","IsEdd":false},{"SeriesID":"4502","IndexName":"Ao-Ashi","SeriesName":"Ao Ashi","Date":"2024-04-23T15:03:39+00:00","Chapter":"103680","IsEdd":false},{"SeriesID":"4401","IndexName":"A-Returners-Magic-Should-Be-Special","SeriesName":"A Returner's Magic Should Be Special","Date":"2024-04-21T15:16:15+00:00","Chapter":"102590","IsEdd":false},{"SeriesID":"4585","IndexName":"Mato-Seihei-No-Slave","SeriesName":"Chained Soldier","Date":"2024-04-21T02:55:51+00:00","Chapter":"101300","IsEdd":false},{"SeriesID":"3289","IndexName":"Tales-Of-Demons-And-Gods","SeriesName":"Tales of Demons and Gods","Date":"2024-04-20T19:41:22+00:00","Chapter":"104710","IsEdd":false},{"SeriesID":"3386","IndexName":"Moon-Led-Journey-Across-Another-World","SeriesName":"Tsukimichi - Moonlit Fantasy","Date":"2024-04-18T06:39:55+00:00","Chapter":"100950","IsEdd":false},{"SeriesID":"153","IndexName":"Onepunch-Man","SeriesName":"One-Punch Man","Date":"2024-04-18T01:22:04+00:00","Chapter":"201965","IsEdd":false},{"SeriesID":"2563","IndexName":"Mushoku-Tensei-Isekai-Ittara-Honki-Dasu","SeriesName":"Mushoku Tensei - Jobless Reincarnation","Date":"2024-04-16T06:09:43+00:00","Chapter":"100990","IsEdd":false},{"SeriesID":"5253","IndexName":"Second-Life-Ranker","SeriesName":"Second Life Ranker","Date":"2024-04-11T23:16:19+00:00","Chapter":"101620","IsEdd":false},{"SeriesID":"6390","IndexName":"Rankers-Return-Remake","SeriesName":"Ranker's Return (Remake)","Date":"2024-04-10T17:46:22+00:00","Chapter":"101460","IsEdd":false},{"SeriesID":"5743","IndexName":"Tensei-Shitara-dai-Nana-Ouji-dattanode-Kimamani-Majutsu-o-Kiwamemasu","SeriesName":"I Was Reincarnated as the 7th Prince so I Can Take My Time Perfecting My Magicals","Date":"2024-04-10T01:51:03+00:00","Chapter":"101625","IsEdd":false},{"SeriesID":"3724","IndexName":"Grand-Blue","SeriesName":"Grand Blue","Date":"2024-04-07T18:53:38+00:00","Chapter":"100920","IsEdd":false},{"SeriesID":"2478","IndexName":"Re-Monster","SeriesName":"Re:Monster","Date":"2024-03-27T04:23:23+00:00","Chapter":"100990","IsEdd":false},{"SeriesID":"5822","IndexName":"SSS-Class-Suicide-Hunter","SeriesName":"SSS-Class Revival Hunter","Date":"2024-03-08T04:15:29+00:00","Chapter":"101150","IsEdd":false},{"SeriesID":"42","IndexName":"Vinland-Saga","SeriesName":"Vinland Saga","Date":"2024-02-23T18:39:53+00:00","Chapter":"102090","IsEdd":false},{"SeriesID":"288","IndexName":"Haikyu","SeriesName":"Haikyu!!","Date":"2024-02-04T17:17:25+00:00","Chapter":"104023","IsEdd":false},{"SeriesID":"5304","IndexName":"Reincarnated-as-an-Aristocrat-with-an-Appraisal-Skill","SeriesName":"As a Reincarnated Aristocrat, I'll Use My Appraisal Skill to Rise in the World","Date":"2024-01-30T15:40:20+00:00","Chapter":"101060","IsEdd":false},{"SeriesID":"5028","IndexName":"Mashle","SeriesName":"Mashle - Magic and Muscles","Date":"2024-01-05T17:18:10+00:00","Chapter":"101625","IsEdd":false},{"SeriesID":"3266","IndexName":"Dungeon-Meshi","SeriesName":"Delicious in Dungeon","Date":"2023-09-16T16:51:13+00:00","Chapter":"100970","IsEdd":false},{"SeriesID":"4379","IndexName":"Martial-Peak","SeriesName":"Martial Peak","Date":"2023-09-15T04:47:39+00:00","Chapter":"235430","IsEdd":false},{"SeriesID":"4446","IndexName":"Solo-Leveling","SeriesName":"Solo Leveling","Date":"2023-05-31T16:29:41+00:00","Chapter":"102000","IsEdd":false},{"SeriesID":"5574","IndexName":"Tomb-Raider-King","SeriesName":"Tomb Raider King","Date":"2023-05-09T14:52:02+00:00","Chapter":"104080","IsEdd":false},{"SeriesID":"5600","IndexName":"The-Beginning-After-The-End","SeriesName":"The Beginning After the End","Date":"2023-01-26T03:49:58+00:00","Chapter":"101750","IsEdd":false},{"SeriesID":"3477","IndexName":"Naruto-Digital-Colored-Comics","SeriesName":"Naruto - Color","Date":"2022-12-30T21:41:14+00:00","Chapter":"100010","IsEdd":false},{"SeriesID":"24","IndexName":"Hunter-X-Hunter","SeriesName":"Hunter x Hunter","Date":"2022-12-25T17:17:23+00:00","Chapter":"104000","IsEdd":false},{"SeriesID":"157","IndexName":"The-God-Of-High-School","SeriesName":"The God of High School","Date":"2022-12-09T03:50:27+00:00","Chapter":"105700","IsEdd":false},{"SeriesID":"2772","IndexName":"One-Piece-Digital-Colored-Comics","SeriesName":"One Piece - Digital Colored Comics","Date":"2022-11-08T15:29:40+00:00","Chapter":"109950","IsEdd":false},{"SeriesID":"5579","IndexName":"The-Boxer","SeriesName":"The Boxer","Date":"2022-06-23T04:39:25+00:00","Chapter":"101230","IsEdd":false},{"SeriesID":"6279","IndexName":"Bleach-Color","SeriesName":"Bleach - Color","Date":"2021-10-27T20:54:51+00:00","Chapter":"104600","IsEdd":false},{"SeriesID":"3","IndexName":"Bleach","SeriesName":"Bleach","Date":"2021-08-09T17:23:12+00:00","Chapter":"106865","IsEdd":false}];
+			
+
+
+			vm.PageOne="-page-1","yes"==Cookies.get("FullPage")&&(vm.PageOne=""),vm.FormatDate=function(e){return moment(e).subtract(1,"hour").fromNow()},vm.DisplayHotSeries=function(e){return e.length>=23?e.substring(0,20)+"...":e},vm.ChapterDisplay=function(e){var n=parseInt(e.slice(1,-1)),t=e[e.length-1];return 0==t?n:n+"."+t},vm.ChapterURLEncode=function(e){Index="";var n=e.substring(0,1);1!=n&&(Index="-index-"+n);var t=parseInt(e.slice(1,-1)),r="",a=e[e.length-1];return 0!=a&&(r="."+a),"-chapter-"+t+r+Index};
+
+
+		};
+		app.controller("MainCtrl", MainFunction);
+	</script>
+</body>
+</html>
